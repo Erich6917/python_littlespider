@@ -7,8 +7,8 @@
 import codecs
 import json
 import re
-# from spider.bird.dynamic.DataOutput import DataOutput
-from spider.bird.dynamic.HtmlDownloader import HtmlDownloader
+# from demo.bird.dynamic.DataOutput import DataOutput
+from demo.bird.dynamic.HtmlDownloader import HtmlDownloader
 
 
 class HtmlParser(object):
