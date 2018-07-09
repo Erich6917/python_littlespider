@@ -38,3 +38,12 @@ def get_all_files(path_source='.'):
         for filename in files:
             file_list.append(filename)
     return file_list
+
+
+def get_all_files_path_name(path_source='.'):
+    file_list = []
+    for root, dirs, files in os.walk(path_source):
+        for filename in files:
+            file_msg = filename, os.path.join(root, filename), root
+            file_list.append(file_msg)
+    return file_list

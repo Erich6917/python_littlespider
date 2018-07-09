@@ -37,9 +37,18 @@ def currDateFormate():
     return now_time
 
 
-def currY_M_D():
+def curr_data_ymdhm():
+    return str(time.strftime("%Y%m%d%H%M", time.localtime()))
+
+
+def curr_date_format():
+    now_time = datetime.datetime.now()
+    return now_time
+
+
+def curr_date_str():
     return time.strftime("%Y-%m-%d", time.localtime())
 
 
-def currYMD():
+def curr_date_str2():
     return time.strftime("%Y%m%d", time.localtime())
