@@ -3,11 +3,11 @@
 # @Author  : LIYUAN134
 # @Site    : 
 # @File    : ximalaya_soup.py
-# @Commment: beautifulSoup 创建工厂
+# @Comment: beautifulSoup 创建工厂
 #
 
 import urllib2
-from util.loggerUtil import *
+from util.logger_util import *
 import requests
 from bs4 import BeautifulSoup
 

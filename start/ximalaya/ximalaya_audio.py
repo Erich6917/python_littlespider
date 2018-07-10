@@ -5,11 +5,12 @@
 # @Comment :
 #
 import re
+import time
 
 from bs4 import BeautifulSoup
 
+import util.date_check_util as data_util
 import ximalaya_soup as soup
-from util.date_check_util import *
 from util.file_check_util import *
 from util.logger_util import *
 
@@ -122,7 +123,7 @@ def download_audio_urls(list_audio, audio_name):
             clean_name = _clean_file_name(audio_name.decode('utf-8'))
             file_name = u'urls_audio_{}.txt'.format(clean_name)
         else:
-            file_name = u'urls_audio_{}.txt'.format(curr_data_ymdhm())
+            file_name = u'urls_audio_{}.txt'.format(data_util.curr_data_ymdhm())
 
         file_path = u'{source}/{name}'.format(source=glb_path_save_urls, name=file_name)
         print "path >>>  ", file_path
@@ -185,7 +186,7 @@ def _save_and_load(audio_info):
             audio_arr[0].strip(), audio_arr[1].decode('utf8').strip(), audio_arr[2], audio_arr[3].strip()
         # audio_name = _get_audio_name(audio_url)
         global glb_path_save_audio
-        time_start = curr_date_format()
+        time_start = data_util.curr_date_format()
 
         # step2 find audio
         file_second_path = os.path.join(glb_path_save_audio, file_name)
@@ -216,7 +217,7 @@ def _save_and_load(audio_info):
         #     with open(audio_msg_path, 'a') as file_audio_msg:
         #         file_audio_msg.write(track_msg)
 
-        time_end = curr_date_format()
+        time_end = data_util.curr_date_format()
         infos("            >costing {}".format((time_end - time_start)))
     except Exception, e:
         errors('保存文件失败 file>{0},errMsg>{1}'.format(audio_info, e))
