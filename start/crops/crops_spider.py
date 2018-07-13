@@ -40,19 +40,16 @@ def start():
 
 def get_page_msg(driver):
     css_list = browser_target_css()
-    counter = 0
     rt_msg = ''
     rt_key = ''
     rt_value = ''
     for tar_ele in css_list:
-        counter += 1
         try:
             rt_key = driver.find_element_by_css_selector(tar_ele[0]).text
             rt_value = driver.find_element_by_css_selector(tar_ele[1]).text
         except Exception, e:
             errors("errors > {}".format(e))
-        save_msg = '[{0:<5}:{1:<20}]@'.format(rt_key, rt_value)
-        rt_msg += save_msg
+        rt_msg += '[{0:<5}:{1:<20}]@'.format(rt_key, rt_value)
     return rt_msg + '\n'
 
 
