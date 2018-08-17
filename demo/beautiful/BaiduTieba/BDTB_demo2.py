@@ -2,7 +2,7 @@
 # @Time    : 2017/12/28 
 # @Author  : LIYUAN134
 # @File    : BDTB_demo2.py
-# @Commment: 
+# @Comment: 
 #            
 __author__ = 'CQC'
 # -*- coding:utf-8 -*-

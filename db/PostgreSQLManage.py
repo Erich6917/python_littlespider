@@ -2,25 +2,19 @@
 # @Time    : 2017/9/18
 # @Author  : LIYUAN134
 # @Site    :
-# @File    : MysqlManage.py
-# @Commment: Mysql数据操作管理
+# @File    : PostgreSQLManage.py
+# @Comment: PostgreSQL数据操作管理
 #           1、执行带参数的ＳＱＬ时，请先用sql语句指定需要输入的条件列表，然后再用tuple/list进行条件批配
 #           2、在格式ＳＱＬ中不需要使用引号指定数据类型，系统会根据输入参数自动识别
 #           3、在输入的值中不需要使用转意函数，系统会自动处理
 
-# import Config
 import sys
 
 import MySQLdb
 import psycopg2
-from DBUtils.PooledDB import PooledDB
 
-# reload(sys)  
-# sys.setdefaultencoding('utf-8')  
 
-"""  
-Config是一些数据库的配置文件  
-"""
+# from DBUtils.PooledDB import PooledDB
 
 
 class Mysql(object):
@@ -57,10 +51,10 @@ class Mysql(object):
         #     port='5432'
         # )
         conn = psycopg2.connect(
-            database='jadebloom',
+            database='d0bloom',
             user='bloomopr',
-            password='pg123',
-            host='192.168.1.132',
+            password='paic1234',
+            host='localhost',
             port='5432'
         )
 
@@ -104,10 +98,6 @@ class Mysql(object):
             print error
             # sys.exit()
 
-    # 创建表
-    # tablename:表名称,attr_dict:属性键值对,constraint:主外键约束
-    # attr_dict:{'book_name':'varchar(200) NOT NULL'...}
-    # constraint:PRIMARY KEY(`id`)
     def _createTable(self, table, attr_dict, constraint):
         sql = ''
         # sql_mid = '`row_id` bigint(11) NOT NULL AUTO_INCREMENT,'  
@@ -278,15 +268,15 @@ class Mysql(object):
         self._cursor.execute(sql, param)
         result = self._cursor.fetchone()
 
-        # mysql写法
-        if param is None:
-            count = self._cursor.execute(sql)
-        else:
-            count = self._cursor.execute(sql, param)
-        if count > 0:
-            result = self._cursor.fetchone()
-        else:
-            result = False
+        # # mysql写法
+        # if param is None:
+        #     count = self._cursor.execute(sql)
+        # else:
+        #     count = self._cursor.execute(sql, param)
+        # if count > 0:
+        #     result = self._cursor.fetchone()
+        # else:
+        #     result = False
         return result
 
     def getMany(self, sql, num, param=None):

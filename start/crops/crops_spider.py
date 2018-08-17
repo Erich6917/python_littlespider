@@ -31,7 +31,7 @@ def start():
         return
 
     with open('crops_messages.txt', 'w+') as file_crops:
-        for page_index in range(1, page_total + 1):
+        for page_index in range(4008, page_total + 1):
             page_msg = get_page_msg(driver)  # 获取页面信息，并且保存
             file_crops.write(page_msg)
 

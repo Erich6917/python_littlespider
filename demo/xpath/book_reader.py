@@ -16,10 +16,19 @@ sys.setdefaultencoding('utf-8')
 def demo1():
     path = 'book.xml'
     dom_tree = etree.parse(path)
-    books = dom_tree.xpath("book/title/@name")
+    books_name = dom_tree.xpath(u"//book/title/text()")
+    print 'all books name > {}'.format(books_name)
 
-    for title in books:
-        print title
-        # print title.extract()
+    book_children = dom_tree.xpath(u'//book[@category="CHILDREN"]')[0]
+
+    print book_children
+    print book_children.xpath('./author/text()')
+    print book_children.xpath('./year/text()')
+
+    print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+    print dom_tree.xpath(u'//book/author/text()')
+
+
+
 
 demo1()
