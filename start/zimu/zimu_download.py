@@ -22,7 +22,7 @@ def start():
     # step2 获取页面明细
     # step3 点击下一页，重复step2
     driver = webdriver.Chrome()
-    with open('source/zimu2.txt', 'r') as ff:
+    with open('source/help.txt', 'r') as ff:
         urls = ff.readlines()
         for url in urls:
             try:
