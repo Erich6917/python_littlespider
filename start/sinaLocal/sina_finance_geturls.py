@@ -1,0 +1,829 @@
+# -*- coding: utf-8 -*-
+# @Time    : 2017/9/19
+# @Author  : LIYUAN134
+# @Site    :
+# @File    : sina_news_geturls.py
+# @Commment: 新浪新闻页面整合处理
+#
+
+import re
+import sys
+import os
+import requests
+import json
+from bloom.sina.entity.newsEntity import pa_voice_news as newsEntity
+import dateCheckUtil as dateUtil
+import logger_util as logger
+from bs4 import BeautifulSoup
+from bloom.sina.tools import sinaSoup as bSoup
+# from dbutil.DBNewsUtil import DBNews
+from util.file_check_util import get_all_dirs, get_all_files
+from logger_util import infos
+import socket
+import time
+
+timeout = 20
+socket.setdefaulttimeout(timeout)
+
+reload(sys)
+sys.setdefaultencoding('UTF-8')
+
+gbl_path_source = 'source'
+gbl_file_urls = None
+gbl_file_log = None
+
+
+def infos(*args):
+    if args:
+        global gbl_file_log
+        str_list = []
+        for each in args:
+            str_list.append(str(each))
+        msg = ''.join(str_list)
+        print msg
+        gbl_file_log.write(msg + '\n')
+
+
+def current_path():
+    """
+        获取当前文件路径
+        兼容pycharm和cmd直接运行脚本路径
+    """
+    if getattr(sys, 'frozen', False):
+        apply_path = os.path.dirname(sys.executable)
+    elif __file__:
+        apply_path = os.path.dirname(__file__)
+    return apply_path
+
+
+def init_path():
+    source = os.path.join(current_path(), gbl_path_source)
+    if not os.path.exists(source):
+        infos('Create path', source)
+        os.mkdir(source)
+
+    infos("Init Path...")
+
+
+def init_files(filename='news_urls'):
+    global gbl_path_source, gbl_file_urls, gbl_file_log
+    source = os.path.join(current_path(), gbl_path_source)
+    if not os.path.exists(source):
+        os.mkdir(source)
+    gbl_path_source = source
+
+    if not gbl_file_log:
+        gbl_file_urls = open(os.path.join(gbl_path_source, filename), 'a')
+    if not gbl_file_log:
+        file_logname = gbl_path_source + '\\logs' + str(dateUtil.currYMD()) + '.log'
+        gbl_file_log = open(file_logname, 'a')
+        infos("Create ", file_logname)
+    infos("Init files...")
+
+
+def close_files():
+    global gbl_file_urls, gbl_file_log
+    if gbl_file_urls:
+        gbl_file_urls.close()
+    if gbl_file_log:
+        gbl_file_log.close()
+    infos("Close files...")
+
+
+def save_url(url):
+    if url:
+        global gbl_file_urls
+        # print url
+        gbl_file_urls.write(url + '\n')
+
+
+def sina_parse_start(scope, url_list):
+    """
+
+    :param url_list: 需要解析的URL
+    :return: 返回KEY > URL，Value > 捕获内容格式的信息
+    """
+    if not url_list:
+        print '没有需要解析的URL'
+        return []
+
+    # URL 去重
+    url_list = list(set(url_list))
+    p_tech_old_normal = r'http://news.sina.com.cn/s/.*'  # sina finace normal type
+    p_tech_normal = r'http://news.sina.com.cn/.*'  # sina finace normal type
+    p_art_normal = r'http://cul.news.sina.com.cn/.*'
+    # 结果返回字段
+    rlist_entity = []
+    num_exist = 0
+
+    print '=============开始匹配=============== 初始请求条数', len(url_list), dateUtil.currDateFormate()
+    for url in url_list:
+
+        try:
+            urlparam = {"news_url": url}
+            isexist = True  # dbnews.isexist_newsmsg(urlparam)
+            if isexist:
+                num_exist += 1
+                continue
+
+            # if re.match(p_tech_old_normal, url, re.M):
+            #     vmsg = bSoup.parse_news_art_normal(url)
+            if re.match(p_tech_normal, url, re.M):
+                vmsg = bSoup.parse_news_normal(url)
+            elif re.match(p_art_normal, url, re.M):
+                vmsg = bSoup.parse_news_normal(url)
+            else:
+                print '暂未匹配该路径', url
+                continue
+
+            if vmsg:
+                entity = newsEntity()
+                entity.news_url = url
+                entity.news_scope = scope
+                entity.news_message = vmsg
+                rlist_entity.append(entity)
+                if len(rlist_entity) % 50 == 0:
+                    print '已经获取记录数', len(rlist_entity), dateUtil.currDateFormate()
+        except Exception, e:
+            print '解析失败：', url, ':', e
+            continue
+    print '=============匹配结束===============', '本次采集数量：', len(rlist_entity), \
+        '已存在记录:', num_exist, dateUtil.currDateFormate()
+
+    return rlist_entity
+
+
+# 财经首页内容获取
+def sina_parse_artibody(url):
+    return bSoup.parse_artibody(url)
+
+
+'''获取新浪新闻根据请求地址获取信息入库 170905
+'''
+
+
+def sina_finance_china_getcount(pageid, lid):
+    """
+    访问地址 http://finance.sina.com.cn/china/
+    # pageid 155 财经国内,
+        lid 1686 > 国内滚动,
+            1687>宏观经济,
+            1688>地方经济,
+            1690>金融新闻,
+            1689>部委动态
+    pageid 164 产经,
+        lid 1693 > 产经滚动,
+            1694>公司新闻,
+            1695>产业新闻,
+            1696>深度报道,
+            1697>人事变动
+
+    """
+    baseurl = 'http://feed.mix.sina.com.cn/api/roll/get?'
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 "
+                             "(KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
+               "Accept": "*/*"}
+
+    page = 1
+    post_param = {'pageid': pageid, 'num': 50, 'page': page, 'lid': lid}  # 产经
+    req = requests.get(baseurl, params=post_param, headers=headers, verify=False)
+    rtjson = json.loads(req.text)
+    result = rtjson['result']
+    if result['data']:
+        print lid, '统计URL条数', result['total']
+        return result['total']
+    return 0
+
+
+def sina_finance_china_geturl(pageid, lid, start=1, end=2, num=10):
+    """
+    国内财经，5sheet,5分页,10每页
+    访问地址 http://finance.sina.com.cn/china/
+
+    """
+    baseurl = 'http://feed.mix.sina.com.cn/api/roll/get?'
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 "
+                             "(KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
+               # "Content-Type": "application/json",
+               "Accept": "*/*"}
+    p_url = []
+
+    for page in range(start, end):
+        # post_param = {'pageid': '155', 'num': 10, 'page': page, 'lid': 1686}  # 1686 财经-国内
+        # pageid 155 财经国内,lid 1686 > 国内滚动,1687>宏观经济,1688>地方经济, 1690》金融新闻,1689>部委动态
+        post_param = {'pageid': pageid, 'num': num, 'page': page, 'lid': lid}  # 产经
+        req = requests.get(baseurl, params=post_param, headers=headers, verify=False)
+        rtjson = json.loads(req.text)
+        result = rtjson['result']
+        data = result['data']
+        # if True:
+        #     # print rtjson
+        #     print 'total:', result['total']
+        #     return
+        for ii in data:
+            # print ii['url']
+            p_url.append(ii['url'])
+    scope = 'news'
+    return scope, p_url
+
+
+def sina_news_roll_main(pageid, lid):
+    """
+    访问地址 http://finance.sina.com.cn/china/
+    # pageid 155 财经国内,
+        lid 1686 > 国内滚动,
+            1687>宏观经济,
+            1688>地方经济,
+            1690>金融新闻,
+            1689>部委动态
+    pageid 164 产经,
+        lid 1693 > 产经滚动,
+            1694>公司新闻,
+            1695>产业新闻,
+            1696>深度报道,
+            1697>人事变动
+
+    """
+    baseurl = 'http://feed.mix.sina.com.cn/api/roll/get?'
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 "
+                             "(KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
+               "Accept": "*/*"}
+
+    page = 1
+    post_param = {'pageid': pageid, 'num': 10, 'page': page, 'lid': lid}  # 产经
+    req = requests.get(baseurl, params=post_param, headers=headers, verify=False)
+    rtjson = json.loads(req.text)
+    result = rtjson['result']
+    if result['data']:
+        print lid, '统计URL条数', result['total']
+        return result['total']
+    return 0
+
+
+def sina_news_geturl(types, start, end):
+    url_list = []
+    dic_url = {
+        'gatxw': ['http://roll.news.sina.com.cn/news/gnxw/gatxw/index_', '.shtml'],
+        'gdxw1': ['http://roll.news.sina.com.cn/news/gnxw/gdxw1/index_', '.shtml'],
+        'zs-pl': ['http://roll.news.sina.com.cn/news/gnxw/zs-pl/index_', '.shtml'],
+        'gjmtjj': ['http://roll.news.sina.com.cn/news/gjxw/gjmtjj/index_', '.shtml'],
+        'fz-shyf': ['http://roll.news.sina.com.cn/news/shxw/fz-shyf/index_', '.shtml'],
+        'qwys': ['http://roll.news.sina.com.cn/news/shxw/qwys/index_', '.shtml'],
+        'shwx': ['http://roll.news.sina.com.cn/news/shxw/shwx/index_', '.shtml'],
+        'zgjq': ['http://roll.mil.news.sina.com.cn/col/zgjq/index_', '.shtml']
+    }
+    rt_dict = dic_url.get(types, [None, None])
+    url_head, url_end = rt_dict[0], rt_dict[1]
+    if not url_head:
+        print '没对应路径'
+        return url_head, url_end
+
+    for page in range(start, end):
+        # url = 'http://roll.finance.sina.com.cn/finance/jj4/index_' + str(page) + '.shtml'
+        url = url_head + str(page) + url_end
+        soup = bSoup.soup_request(url, 'gb2312')
+        alist = soup.select('#Main .listBlk .list_009 a')
+        for link in alist:
+            # title = link.text
+            url = link.get('href')
+            # print link.text, link.get('href')
+            if url:
+                url_list.append(url)
+    scope = 'news'
+    return scope, url_list
+
+
+def sina_news_getcount(types):
+    # 959   财经 > 证券 > 上市公司
+
+    total = {
+        'gatxw': 959,  # 新闻中心 > 国内新闻 > 港澳台新闻
+        'gdxw1': 10900,  # 新闻中心 > 国内新闻 > 各地新闻
+        'zs-pl': 860,  # 新闻中心 > 国内新闻 > 综述分析
+        'gjmtjj': 1500,  # 新闻中心 > 国际新闻 > 环球视野
+        'fz-shyf': 1300,  # 新闻中心 > 社会新闻 > 社会与法
+        'qwys': 350,  # 新闻中心 > 社会新闻 > 奇闻轶事
+        'shwx': 4900,  # 新闻中心 > 社会新闻 > 社会万象
+        'zgjq': 2000,  # 新闻中心 > 军事新闻 > 中国军事
+    }.get(types, 0)
+    infos(types, '类型共计URL条数:', total)
+    return total
+
+
+def telnet_news_roll():
+    steps = 10
+    type_list = ['gatxw', 'gdxw1', 'zs-pl']
+    # 'zs-pl',
+    # type_list = ['gatxw', 'gdxw1', 'zs-pl','gjmtjj','fz-shyf','qwys' ]
+    # gatxw  新闻中心 > 国内新闻 > 港澳台新闻
+    # gdxw1  新闻中心 > 国内新闻 > 各地新闻
+    # zs-pl  新闻中心 > 国内新闻 > 综述分析
+    # gjmtjj 新闻中心 > 国际新闻 > 环球视野
+    # fz-shyf新闻中心 > 社会新闻 > 社会与法
+    # qwys   新闻中心 > 社会新闻 > 奇闻轶事
+    # shwx   新闻中心 > 社会新闻 > 社会万象
+    # zgjq   新闻中心 > 军事新闻 > 中国军事
+
+    max_counter = 5  # 最大空循环次数
+    for types in type_list:
+        total = sina_news_getcount(types)
+        pstart = 1000
+        while pstart <= total - steps:
+            pend = pstart + steps
+
+            print 'page:', '[', pstart, '-', pend, ']'
+            scope, url_list = sina_news_geturl(types, pstart, pend)
+            if not scope:
+                infos('异常中断，未找到对应类型')
+                break
+
+            pstart += steps
+            rlist_entity = sina_parse_start(scope, url_list)
+
+            if not rlist_entity:
+                # 如果连续多次结果集为空，则跳出循环
+                if max_counter < 0:
+                    max_counter = 5
+                    infos('该访问规则多次访问未查询到内容')
+                    break
+                max_counter -= 1
+                infos('URL抓取内容为空' + str(max_counter))
+                continue
+
+                # dbnews.save_news_entity(rlist_entity)
+
+
+def telnet_news_noraml():
+    dic_lids = {
+        # 204: [22, ],  # 新闻》内地
+        # 411: [2595]  # 文化》最新
+        # 155: [1686, 1687, 1688, 1689, 1690],
+        # 164: [1693, 1694, 1695, 1696, 1697]
+        384: [2519]  # 财经滚动
+
+    }
+
+    '''
+     # pageid 155 财经国内,
+        lid 1686 > 国内滚动,
+            1687>宏观经济,
+            1688>地方经济,
+            1690>金融新闻,
+            1689>部委动态
+        pageid 164 产经,
+        lid 1693 > 产经滚动,
+            1694>公司新闻,
+            1695>产业新闻,
+            1696>深度报道,
+            1697>人事变动
+    '''
+    max_counter = 10
+    steps = 10
+    page_size = 30
+    for pageid, lids in dic_lids.items():
+        for lid in lids:
+            total = sina_finance_china_getcount(pageid, lid)
+            pstart = 15309
+            page_total = total / page_size
+            while pstart <= page_total:
+                pend = pstart + steps
+                scope, url_list = sina_finance_china_geturl(pageid, lid, pstart, pend, page_size)
+                scope = 'news'
+
+                print 'page:', '[', pstart, '-', pend, ']', 'page_size:', page_size
+
+                pstart += steps
+
+                '''
+                临时存储 URL START
+                '''
+                for href in url_list:
+                    save_url(href)
+
+                continue
+
+                '''
+                临时存储 URL END
+                '''
+
+                rlist_entity = sina_parse_start(scope, url_list)
+                if not rlist_entity:
+                    # 如果连续多次结果集为空，则跳出循环
+                    if max_counter < 0:
+                        max_counter = 5
+                        infos('该访问规则多次访问未查询到内容')
+                        break
+                    max_counter -= 1
+                    infos('URL抓取内容为空' + str(max_counter))
+                    continue
+                    # dbnews.save_news_entity(rlist_entity)
+
+
+def sina_news_top_url_roll(pstart, pend):
+    """
+    各类型滚动
+    http://roll.news.sina.com.cn/s/channel.php?ch=01#col=90,91,92
+    &spec=&type=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1
+    """
+    baseurl = 'http://roll.news.sina.com.cn/s/channel.php?' \
+              'ch=01#col=90,91,92&spec=&type=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc='
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 "
+                             "(KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
+               "Accept": "*/*"}
+    url_list = []
+    for page in range(pstart, pend + 1):
+        post_param = {'page': page}  # 产经
+        req = requests.get(baseurl, params=post_param, headers=headers, verify=False)
+        req.encoding = 'UTF8'
+        soup = BeautifulSoup(req.text, 'html5lib')
+        a_list = soup.select('#d_list ul li .c_tit a')
+        for e_l in a_list:
+            url_list.append(e_l.get('href'))
+
+    return url_list
+
+
+def sina_news_top_start():
+    maxpage = 118
+    steps = 10
+
+    pstart = 1
+    max_counter = 5
+    while pstart <= maxpage - steps:
+        pend = pstart + steps
+
+        url_list = sina_news_top_url_roll(pstart, pend)
+
+        scope = 'news'
+
+        print 'page:', '[', pstart, '-', pend, ']'
+
+        pstart += steps
+        rlist_entity = sina_parse_start(scope, url_list)
+        if not rlist_entity:
+            # 如果连续多次结果集为空，则跳出循环
+            if max_counter < 0:
+                max_counter = 5
+                infos('该访问规则多次访问未查询到内容')
+                break
+            max_counter -= 1
+            infos('URL抓取内容为空' + str(max_counter))
+            continue
+            # dbnews.save_news_entity(rlist_entity)
+
+
+def sina_news_ztlist_geturl(cat, start=1, end=2):
+    """
+
+        访问地址 http://finance.sina.com.cn/stock/thirdmarket/
+
+    """
+    baseurl = 'http://api.roll.news.sina.com.cn/zt_list?'
+    # 'channel=finance&cat_1=zq1&cat_2=sbsc&show_ext=1&tag=1' \
+    # '&callback=jQuery17206549982968638923_1513913697391&show_num=10&page=3&_=1513922919151'
+    # baseurl = 'http://feed.mix.sina.com.cn/api/roll/get?'
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 "
+                             "(KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
+               # "Content-Type": "application/json",
+               "Accept": "*/*"}
+    p_url = []
+
+    print 'page:', start, end
+
+    for page in range(start, end):
+        # post_param = {'pageid': '155', 'num': 10, 'page': page, 'lid': 1686}  # 1686 财经-国内
+        # pageid 155 财经国内,lid 1686 > 国内滚动,1687>宏观经济,1688>地方经济, 1690》金融新闻,1689>部委动态
+        post_param = {'channel': 'news', 'show_num': 22, 'page': page, 'tag': 1
+            , 'cat_1': cat, 'cat_2': '', 'show_all': 1}  # 产经
+        req = requests.get(baseurl, params=post_param, headers=headers, verify=False)
+        try:
+            rtjson = json.loads(req.text)
+            result = rtjson['result']
+            data = result['data']
+            for ii in data:
+                p_url.append(ii['url'])
+        except Exception, e:
+            print '文本解析失败', e
+    scope = 'news'
+    return scope, p_url
+
+
+def sina_parse_ztlist(cat, start=1, end=2):
+    """
+
+        访问地址 http://finance.sina.com.cn/stock/thirdmarket/
+
+    """
+    baseurl = 'http://api.roll.news.sina.com.cn/zt_list?'
+    # 'channel=finance&cat_1=zq1&cat_2=sbsc&show_ext=1&tag=1' \
+    # '&callback=jQuery17206549982968638923_1513913697391&show_num=10&page=3&_=1513922919151'
+    # baseurl = 'http://feed.mix.sina.com.cn/api/roll/get?'
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 "
+                             "(KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
+               # "Content-Type": "application/json",
+               "Accept": "*/*"}
+    p_url = []
+
+    print 'page:', start, end
+
+    for page in range(start, end):
+        # post_param = {'pageid': '155', 'num': 10, 'page': page, 'lid': 1686}  # 1686 财经-国内
+        # pageid 155 财经国内,lid 1686 > 国内滚动,1687>宏观经济,1688>地方经济, 1690》金融新闻,1689>部委动态
+        post_param = {'channel': 'news', 'show_num': 22, 'page': page, 'tag': 1
+            , 'cat_1': cat, 'cat_2': '', 'show_all': 1}  # 产经
+        try:
+            req = requests.get(baseurl, params=post_param, headers=headers, verify=False)
+            rtjson = json.loads(req.text)
+            result = rtjson['result']
+            data = result['data']
+            for ii in data:
+                p_url.append(ii['url'])
+        except Exception, e:
+            print '文本解析失败', e
+            time.sleep(10)
+    return p_url
+
+
+def demossss(start=1, end=2):
+    """
+
+        访问地址 http://finance.sina.com.cn/stock/thirdmarket/
+
+    """
+    baseurl = 'http://api.roll.news.sina.com.cn/zt_list?'
+    # 'channel=finance&cat_1=zq1&cat_2=sbsc&show_ext=1&tag=1' \
+    # '&callback=jQuery17206549982968638923_1513913697391&show_num=10&page=3&_=1513922919151'
+    # baseurl = 'http://feed.mix.sina.com.cn/api/roll/get?'
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 "
+                             "(KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
+               # "Content-Type": "application/json",
+               "Accept": "*/*"}
+    p_url = []
+
+    print 'page:', start, end
+
+    for page in range(start, end):
+        # post_param = {'pageid': '155', 'num': 10, 'page': page, 'lid': 1686}  # 1686 财经-国内
+        # pageid 155 财经国内,lid 1686 > 国内滚动,1687>宏观经济,1688>地方经济, 1690》金融新闻,1689>部委动态
+        post_param = {'channel': 'news', 'show_num': 22, 'page': page, 'tag': 1
+            , 'cat_1': 'shxw', 'cat_2': '', 'show_all': 1}  # 产经
+        req = requests.get(baseurl, params=post_param, headers=headers, verify=False)
+        rtjson = json.loads(req.text)
+        print req.text
+        result = rtjson['result']
+        data = result['data']
+        for ii in data:
+            p_url.append(ii['url'])
+    scope = 'news'
+    return scope, p_url
+
+
+def geturls_news_china():
+    filename = 'news_china_2.txt'
+    init_files(filename)
+    init_path()
+
+    dic_zlits = {
+        # 'gnxw': 279263,
+        # 'gnxw': 279,
+        'shxw': 20000,  # 国内新闻 最新消息  3191
+    }
+    steps = 10
+    pstart = 1
+    counter = 0
+    for cat, total in dic_zlits.items():
+        print 'START', cat, total
+        while pstart <= total - steps:
+            pend = pstart + steps
+
+            print 'page:', '[', pstart, '-', pend, ']'
+            url_list = sina_parse_ztlist(cat, pstart, pend)
+            if url_list:
+                for url in url_list:
+                    save_url(url)
+            else:
+                if counter > 10:
+                    infos('停止URL获取')
+                    return
+                counter += 1
+                infos('获取URL为空！', counter)
+            time.sleep(1)
+            pstart += steps
+            # rlist_entity = sina_parse_start(scope, url_list)
+
+    close_files()
+
+
+def sina_news_ztlist_start():
+    dic_zlits = {
+        # 'gnxw': 279263,
+        'shxw': 453606,  # 国内新闻 最新消息  3191
+    }
+    steps = 10
+    pstart = 5421
+    max_counter = 5
+    for cat, total in dic_zlits.items():
+        print 'START', cat, total
+        while pstart <= total - steps:
+            pend = pstart + steps
+
+            print 'page:', '[', pstart, '-', pend, ']'
+            scope, url_list = sina_news_ztlist_geturl(cat, pstart, pend)
+            if not scope:
+                infos('异常中断，未找到对应类型')
+                break
+
+            pstart += steps
+            rlist_entity = sina_parse_start(scope, url_list)
+
+            if not rlist_entity:
+                # 如果连续多次结果集为空，则跳出循环
+                if max_counter < 0:
+                    # max_counter = 5
+                    infos('该访问规则多次访问未查询到内容')
+                    break
+                max_counter -= 1
+                infos('URL抓取内容为空' + str(max_counter))
+                continue
+            max_counter = 5
+            # dbnews.save_news_entity(rlist_entity)
+
+
+def _finance_geturl_roll():
+    """
+    财经滚动  解析json内容
+    访问地址 http://finance.sina.com.cn/roll/
+
+    """
+    baseurl = 'http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?'
+    'spec=&type=&ch=03&k=&offset_page=0&offset_num=0&num=60&asc=&r=0.9330196594434315'
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 "
+                             "(KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
+               # "Content-Type": "application/json",
+               "Accept": "*/*"}
+    p_url = []
+
+    for page in range(1, 2):
+        # for page in range(1):
+        post_param = {'col': '43', 'page': page}
+        return_data = requests.get(baseurl, params=post_param, headers=headers, verify=False)
+        data = return_data.text
+
+        #         print data
+        result = re.findall('{channel : {title : (.+?),id : .*},title : "(.*)",url : "(.*)",type.*,time :(.*)},', data)
+        for item in result:
+            name, url = item[1], item[2]
+            # print chardet.detect(item[1])
+            print item[1], '>', item[2], '>', item[3]
+            # if url:
+            #     print url
+            #     p_url.append(url)
+
+    print len(p_url)
+    return p_url
+
+
+def sina_finance_jj_normal_geturl(types, start, end):
+    # 基金声音 财经 > 基金 > 基金声音
+    # 财经 > 证券 > 股市及时雨 目测最多5200页
+    # ‘http://roll.finance.sina.com.cn/finance/zq1/gsjsy/index_5197.shtml
+    url_list = []
+    dic_url = {
+        'ssgs': ['http://roll.finance.sina.com.cn/finance/zq1/ssgs/index_', '.shtml'],
+        'zldx': ['http://roll.finance.sina.com.cn/finance/zq1/zldx/index_', '.shtml'],
+        'hgyj': ['http://roll.finance.sina.com.cn/finance/zq1/hgyj/index_', '.shtml'],
+        'gsjsy': ['http://roll.finance.sina.com.cn/finance/zq1/gsjsy/index_', '.shtml'],
+        'jjbk': ['http://roll.finance.sina.com.cn/blog/blogarticle/cj-jjbk/index_', '.shtml'],
+        'bbks': ['http://roll.finance.sina.com.cn/blog/blogarticle/cj-bkks/inde_', '.shtml'],
+        'qsyw': ['http://roll.finance.sina.com.cn/finance/qh/qsyw/index_', '.shtml'],
+        'ncpzx': ['http://roll.finance.sina.com.cn/finance/qh/ncpzx/index_', '.shtml'],
+        'pzyj': ['http://roll.finance.sina.com.cn/finance/qh/pzyj/index_', '.shtml'],
+        'ggggdp': ['http://roll.finance.sina.com.cn/finance/gg/ggggdp/index_', '.shtml'],
+        'ggipo': ['http://roll.finance.sina.com.cn/finance/gg/ggipo/index_', '.shtml'],
+        'gsxw': ['http://roll.finance.sina.com.cn/finance/gg/gsxw/index_', '.shtml'],
+        'sdpl': ['http://roll.finance.sina.com.cn/finance/gg/sdpl/index_', '.shtml'],
+        'xgqzzx': ['http://roll.finance.sina.com.cn/finance/gg/xgqzzx/index_', '.shtml'],
+        'jj4': ['http://roll.finance.sina.com.cn/finance/jj4/index_', '.shtml'],
+        'jjsy': ['http://roll.finance.sina.com.cn/finance/jj4/jjsy/index_', '.shtml']
+    }
+    rt_dict = dic_url.get(types, [None, None])
+    url_head, url_end = rt_dict[0], rt_dict[1]
+    if not url_head:
+        print '没对应路径'
+        return url_head, url_end
+    # print 'page:', start, end
+    for page in range(start, end):
+        # url = 'http://roll.finance.sina.com.cn/finance/jj4/index_' + str(page) + '.shtml'
+        url = url_head + str(page) + url_end
+        soup = bSoup.soup_request(url)
+        alist = soup.select('#Main .listBlk .list_009 a')
+
+        for link in alist:
+            # title = link.text
+            url = link.get('href')
+            # print link.text, link.get('href')
+            if url:
+                url_list.append(url)
+    return url_list
+def sina_finance_jj_normal_getcount(types):
+    # 基金声音 财经 > 基金 > 基金声音
+    # 'http://roll.finance.sina.com.cn/finance/jj4/jjsy/index_300.shtml'
+    # 暂定300 数据较老
+
+    total = {
+        'ssgs': 4990,  # ssgs   财经 > 证券 > 上市公司
+        'zldx': 628,  # zldx   财经 > 证券 > 主力动向
+        'hgyj': 445,  # hgyj   财经 > 证券 > 宏观研究
+        'gsjsy': 5197,  # gsjsy  财经 > 证券 > 股市及时雨
+        'jjbk': 580,  # jjbk   财经 > 股票博客  > 基金博客
+        'bkks': 6710,  # bkks   财经 > 股票博客  > 博客看市
+        'qsyw': 2100,  # qsyw   财经 > 期货 > 期市要闻
+        'ncpzx': 3245,  # ncpzx  财经 > 期货 > 农产品资讯
+        'pzyj': 1100,  # pzyj   财经 > 期货 > 品种研究
+        'ggggdp': 1900,  # 财经  >  港股  >  港股个股点评
+        'ggipo': 420,  # 财经 > 港股 > 港股IPO
+        'gsxw': 4420,  # gsxw   财经 > 港股 > 公司新闻
+        'sdpl': 188,  # 财经 > 港股 > 深度评论
+        'xgqzzx': 615,  # 财经 > 港股 > 香港权证资讯
+        'jj4': 3850,  # 财经 > 基金
+        'jjsy': 300  # jjsy   财经 > 基金 > 基金声音
+
+    }.get(types, 0)
+    return total
+def telnet_finance_jj_noraml():
+    # types:
+    # ssgs   财经 > 证券 > 上市公司
+    # zldx   财经 > 证券 > 主力动向
+    # hgyj   财经 > 证券 > 宏观研究
+    # gsjsy  财经 > 证券 > 股市及时雨
+
+    # jjbk   财经 > 股票博客  > 基金博客
+    # bkks   财经 > 股票博客  > 博客看市
+    # qsyw   财经 > 期货 > 期市要闻
+    # ncpzx  财经 > 期货 > 农产品资讯
+    # pzyj   财经 > 期货 > 品种研究
+    # ggggdp 财经 > 港股 > 港股个股点评
+    # ggipo  财经 > 港股 > 港股IPO
+    # gsxw   财经 > 港股 > 公司新闻
+    # sdpl   财经 > 港股 > 深度评论
+    # xgqzzx 财经 > 港股 > 香港权证资讯
+    # jj4    财经 > 基金
+    # jjsy   财经 > 基金 > 基金声音
+
+    steps = 10
+    steps = 1
+    type_list = ['ssgs', 'zldx', 'hgyj', 'gsjsy', 'jjbk', 'bkks', 'qsyw', 'ncpzx', 'pzyj', 'ggggdp', 'ggipo', 'gsxw',
+                 'sdpl', 'xgqzzx', 'jj4', 'jjsy', ]
+
+    # type_list = ['jj4']
+    for types in type_list:
+        total = sina_finance_jj_normal_getcount(types)
+        total = 2
+        pstart = 1
+        while pstart <= total - steps:
+            pend = pstart + steps
+            url_list = sina_finance_jj_normal_geturl(types, pstart, pend)
+            print url_list[0]
+            # if not scope:
+            #     infos('异常中断，未找到对应类型')
+            #     break
+            # rlist_entity = sina_parse_start(scope, url_list)
+            pstart += steps
+
+def start():
+    startTime = dateUtil.currDateFormate()
+    logger.infos('新浪网爬虫任务开始:', startTime)
+
+    # _finance_geturl_roll()
+    filename = 'url_finance_roll.txt'
+    init_files(filename)
+    init_path()
+    #
+    telnet_news_noraml()
+    # telnet_news_roll()
+    # sina_news_top_start()
+    # sina_news_ztlist_start()  # 接口API
+    # demossss(1, 10)
+
+    # geturls_news_china() #国内新闻
+
+    endTime = dateUtil.currDateFormate()
+
+    print '新浪网处理完毕！', endTime
+    print '本次共计耗时', (endTime - startTime)
+    # url = 'http://roll.news.sina.com.cn/news/gnxw/gatxw/index_959.shtml'
+    # res = requests.get(url)
+    # res.encoding = 'gb2312'
+    # soup = BeautifulSoup(res.text, 'html5lib')
+    #
+    # a_list = soup.select('#Main li a')
+    # print len(a_list)
+    # for a in a_list:
+    #     print a.text, a.get('href')
+
+
+if __name__ == "__main__":
+    # start()
+
+    telnet_finance_jj_noraml()
+    # test()

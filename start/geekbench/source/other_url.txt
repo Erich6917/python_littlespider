@@ -1,0 +1,748 @@
+Micro-Star International Co., Ltd. MS-7A36@@@https://browser.geekbench.com//v4/cpu/12142685
+Motorola Moto Z Play@@@https://browser.geekbench.com//v4/cpu/12142684
+MacBookPro15,3@@@https://browser.geekbench.com//v4/cpu/12142682
+iMac14,2@@@https://browser.geekbench.com//v4/cpu/12142681
+MacBook Pro (13-inch Mid 2012)@@@https://browser.geekbench.com//v4/cpu/12142679
+MacPro5,1@@@https://browser.geekbench.com//v4/cpu/12142678
+MacBook Pro (15-inch Late 2011)@@@https://browser.geekbench.com//v4/cpu/12142672
+Apple Inc. MacBook8,1@@@https://browser.geekbench.com//v4/cpu/12142670
+Gigabyte Technology Co., Ltd. Z390 AORUS MASTER@@@https://browser.geekbench.com//v4/cpu/12142665
+LENOVO 81D2@@@https://browser.geekbench.com//v4/cpu/12142658
+Gigabyte Technology Co., Ltd. To be filled by O.E.M.@@@https://browser.geekbench.com//v4/cpu/12142653
+iMac (27-inch Mid 2011)@@@https://browser.geekbench.com//v4/cpu/12142652
+Amlogic STV-2000@@@https://browser.geekbench.com//v4/cpu/12142651
+Samsung Galaxy J7 Sky Pro@@@https://browser.geekbench.com//v4/cpu/12142649
+MacPro5,1@@@https://browser.geekbench.com//v4/cpu/12142646
+iMac (27-inch Retina Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12142640
+Amlogic X96Max_V311@@@https://browser.geekbench.com//v4/cpu/12142636
+iMac (27-inch Mid 2011)@@@https://browser.geekbench.com//v4/cpu/12142635
+Hewlett-Packard HP Pavilion g6 NoteBook PC@@@https://browser.geekbench.com//v4/cpu/12142634
+TIMI TM1707@@@https://browser.geekbench.com//v4/cpu/12142626
+Gigabyte Technology Co., Ltd. To be filled by O.E.M.@@@https://browser.geekbench.com//v4/cpu/12142625
+MacPro5,1@@@https://browser.geekbench.com//v4/cpu/12142622
+asus Nexus 7@@@https://browser.geekbench.com//v4/cpu/12142621
+Clevo W650DC,DD@@@https://browser.geekbench.com//v4/cpu/12142620
+Dell Inc. Latitude E7440@@@https://browser.geekbench.com//v4/cpu/12142619
+iMac14,1@@@https://browser.geekbench.com//v4/cpu/12142613
+Godzilla The_Best_Box@@@https://browser.geekbench.com//v4/cpu/12142608
+HP HP Pavilion x360 Convertible@@@https://browser.geekbench.com//v4/cpu/12142603
+ASUSTeK COMPUTER INC. X510UAR@@@https://browser.geekbench.com//v4/cpu/12142602
+edong HT_7RT@@@https://browser.geekbench.com//v4/cpu/12142601
+HTC One@@@https://browser.geekbench.com//v4/cpu/12142600
+MacBook Pro (13-inch Retina Early 2015)@@@https://browser.geekbench.com//v4/cpu/12142596
+Apple Inc. iMacPro1,1@@@https://browser.geekbench.com//v4/cpu/12142592
+Amlogic STV-2000@@@https://browser.geekbench.com//v4/cpu/12142590
+Motorola Moto G4@@@https://browser.geekbench.com//v4/cpu/12142587
+iMac18,3@@@https://browser.geekbench.com//v4/cpu/12142584
+Acer Aspire V5-471G@@@https://browser.geekbench.com//v4/cpu/12142583
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12142579
+INTEL_ D945GCR_@@@https://browser.geekbench.com//v4/cpu/12142575
+MacBook Pro (13-inch Mid 2012)@@@https://browser.geekbench.com//v4/cpu/12142574
+Motorola Moto G (2014)@@@https://browser.geekbench.com//v4/cpu/12142572
+LENOVO 20MDCTO1WW@@@https://browser.geekbench.com//v4/cpu/12142565
+Samsung Galaxy Note 4@@@https://browser.geekbench.com//v4/cpu/12142564
+MacBook Pro (13-inch Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12142558
+iMac14,2@@@https://browser.geekbench.com//v4/cpu/12142553
+Logitech NXA8QC116@@@https://browser.geekbench.com//v4/cpu/12142550
+Unknown@@@https://browser.geekbench.com//v4/cpu/12142549
+MacBook Pro (13-inch Retina Late 2013)@@@https://browser.geekbench.com//v4/cpu/12142547
+VMware, Inc. VMware7,1@@@https://browser.geekbench.com//v4/cpu/12142542
+iMac (27-inch Late 2013)@@@https://browser.geekbench.com//v4/cpu/12142539
+IBM IBM System x3250 M5: -[5458AC1]-@@@https://browser.geekbench.com//v4/cpu/12142538
+iMac18,1@@@https://browser.geekbench.com//v4/cpu/12142532
+Micro-Star International Co., Ltd. MS-7B50@@@https://browser.geekbench.com//v4/cpu/12142531
+Red Hat KVM@@@https://browser.geekbench.com//v4/cpu/12142529
+ASUSTeK COMPUTER INC. ASUS TUF FX10CP_FX10CP@@@https://browser.geekbench.com//v4/cpu/12142524
+MacPro6,1@@@https://browser.geekbench.com//v4/cpu/12142523
+samsung SM-T533@@@https://browser.geekbench.com//v4/cpu/12142522
+Gigabyte Technology Co., Ltd. Z390 AORUS ULTRA@@@https://browser.geekbench.com//v4/cpu/12142520
+Gigabyte Technology Co., Ltd. Z390 AORUS MASTER@@@https://browser.geekbench.com//v4/cpu/12142518
+ASUS All Series@@@https://browser.geekbench.com//v4/cpu/12142516
+iMac (27-inch Late 2013)@@@https://browser.geekbench.com//v4/cpu/12142514
+INTEL_ D945GCR_@@@https://browser.geekbench.com//v4/cpu/12142509
+Gigabyte Technology Co., Ltd. To be filled by O.E.M.@@@https://browser.geekbench.com//v4/cpu/12142504
+Samsung Galaxy A5 (2016)@@@https://browser.geekbench.com//v4/cpu/12142501
+iMacPro1,1@@@https://browser.geekbench.com//v4/cpu/12142500
+MacBook Pro (13-inch Retina Early 2015)@@@https://browser.geekbench.com//v4/cpu/12142498
+Samsung Galaxy J7 Prime@@@https://browser.geekbench.com//v4/cpu/12142497
+Mac mini (Early 2010)@@@https://browser.geekbench.com//v4/cpu/12142496
+MacPro2,1@@@https://browser.geekbench.com//v4/cpu/12142494
+Samsung Galaxy S5@@@https://browser.geekbench.com//v4/cpu/12142493
+LENOVO 20MDCTO1WW@@@https://browser.geekbench.com//v4/cpu/12142491
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12142489
+Hewlett-Packard HP Z620 Workstation@@@https://browser.geekbench.com//v4/cpu/12142488
+MacBook Pro (15-inch Mid 2018)@@@https://browser.geekbench.com//v4/cpu/12142485
+MacBook Pro (13-inch Late 2011)@@@https://browser.geekbench.com//v4/cpu/12142480
+Generic@@@https://browser.geekbench.com//v4/cpu/12142474
+LG Electronics A75BV.AH3351@@@https://browser.geekbench.com//v4/cpu/12142472
+intel Elite 8@@@https://browser.geekbench.com//v4/cpu/12142470
+Micro-Star International Co., Ltd. MS-7B24@@@https://browser.geekbench.com//v4/cpu/12142465
+ZUUM STELLAR PLUS@@@https://browser.geekbench.com//v4/cpu/12142464
+Samsung Galaxy S5 LTE-A@@@https://browser.geekbench.com//v4/cpu/12142462
+Mac Pro (Mid 2010)@@@https://browser.geekbench.com//v4/cpu/12142461
+rockchip HT_7RK@@@https://browser.geekbench.com//v4/cpu/12142456
+LENOVO 20MDCTO1WW@@@https://browser.geekbench.com//v4/cpu/12142450
+MacBook Pro (15-inch Mid 2018)@@@https://browser.geekbench.com//v4/cpu/12142449
+iMacPro1,1@@@https://browser.geekbench.com//v4/cpu/12142444
+MacBook Pro (15-inch Late 2016)@@@https://browser.geekbench.com//v4/cpu/12142439
+MacBook Pro (13-inch Late 2011)@@@https://browser.geekbench.com//v4/cpu/12142438
+Hewlett-Packard HP ENVY m6 Notebook PC@@@https://browser.geekbench.com//v4/cpu/12142436
+MacBook Air (Late 2018)@@@https://browser.geekbench.com//v4/cpu/12142434
+KIANO IntelectX3HD@@@https://browser.geekbench.com//v4/cpu/12142431
+MacBook Pro (13-inch Retina Early 2015)@@@https://browser.geekbench.com//v4/cpu/12142430
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12142425
+iMac14,2@@@https://browser.geekbench.com//v4/cpu/12142421
+iMac18,1@@@https://browser.geekbench.com//v4/cpu/12142418
+mid 8M@@@https://browser.geekbench.com//v4/cpu/12142417
+Samsung Galaxy Note 3@@@https://browser.geekbench.com//v4/cpu/12142412
+HaierComputer 7G-Series@@@https://browser.geekbench.com//v4/cpu/12142411
+Dell Inc. Latitude E7440@@@https://browser.geekbench.com//v4/cpu/12142408
+Xiaomi MI-2@@@https://browser.geekbench.com//v4/cpu/12142404
+System manufacturer ROG MAXIMUS XI FORMULA@@@https://browser.geekbench.com//v4/cpu/12142402
+Dell Inc. Inspiron 15 7000 Gaming@@@https://browser.geekbench.com//v4/cpu/12142401
+MacPro5,1@@@https://browser.geekbench.com//v4/cpu/12142399
+MacBook Pro (15-inch Retina Late 2013)@@@https://browser.geekbench.com//v4/cpu/12142398
+iMac (27-inch Retina Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12142397
+Motorola Moto G5 Plus@@@https://browser.geekbench.com//v4/cpu/12142393
+Amlogic STV-2000@@@https://browser.geekbench.com//v4/cpu/12142390
+MacBookPro14,1@@@https://browser.geekbench.com//v4/cpu/12142389
+samsung SM-M105F@@@https://browser.geekbench.com//v4/cpu/12142388
+MacPro5,1@@@https://browser.geekbench.com//v4/cpu/12142384
+Unknown@@@https://browser.geekbench.com//v4/cpu/12142379
+Xiaomi Redmi 6@@@https://browser.geekbench.com//v4/cpu/12142378
+LG G3@@@https://browser.geekbench.com//v4/cpu/12142376
+MacBook Pro (15-inch Early 2011)@@@https://browser.geekbench.com//v4/cpu/12142374
+MacBook Pro (13-inch Late 2011)@@@https://browser.geekbench.com//v4/cpu/12142364
+samsung SM-J600G@@@https://browser.geekbench.com//v4/cpu/12142363
+MacBook (Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12142361
+samsung SM-J810Y@@@https://browser.geekbench.com//v4/cpu/12142360
+Amlogic STV-2000@@@https://browser.geekbench.com//v4/cpu/12142353
+MacBook Pro (13-inch Retina Early 2015)@@@https://browser.geekbench.com//v4/cpu/12142344
+Red Hat KVM@@@https://browser.geekbench.com//v4/cpu/12142343
+Razer Blade@@@https://browser.geekbench.com//v4/cpu/12142341
+Dell Inc. G3 3779@@@https://browser.geekbench.com//v4/cpu/12142339
+Acer Aspire F5-573G@@@https://browser.geekbench.com//v4/cpu/12142337
+iMac (21.5-inch Late 2015)@@@https://browser.geekbench.com//v4/cpu/12142336
+Dell Inc. G3 3779@@@https://browser.geekbench.com//v4/cpu/12142339
+Acer Aspire F5-573G@@@https://browser.geekbench.com//v4/cpu/12142337
+iMac (21.5-inch Late 2015)@@@https://browser.geekbench.com//v4/cpu/12142336
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12142332
+MacBook Pro (15-inch Late 2016)@@@https://browser.geekbench.com//v4/cpu/12142328
+MacBook Pro (15-inch Late 2016)@@@https://browser.geekbench.com//v4/cpu/12142314
+iMac Pro (Late 2017)@@@https://browser.geekbench.com//v4/cpu/12142311
+iMacPro1,1@@@https://browser.geekbench.com//v4/cpu/12142309
+LENOVO 20MDCTO1WW@@@https://browser.geekbench.com//v4/cpu/12142308
+MacBook Air (13-inch Mid 2013)@@@https://browser.geekbench.com//v4/cpu/12142307
+LENOVO 20AWS1JN00@@@https://browser.geekbench.com//v4/cpu/12142304
+Dell Inc. Latitude 7380@@@https://browser.geekbench.com//v4/cpu/12142303
+Amazon Fire HD 10@@@https://browser.geekbench.com//v4/cpu/12142302
+MacBook Pro (13-inch Retina Mid 2014)@@@https://browser.geekbench.com//v4/cpu/12142301
+MacBook Pro (13-inch Late 2011)@@@https://browser.geekbench.com//v4/cpu/12142299
+Google Pixel 3 XL@@@https://browser.geekbench.com//v4/cpu/12142293
+Generic@@@https://browser.geekbench.com//v4/cpu/12142292
+MacBook Pro (15-inch Late 2016)@@@https://browser.geekbench.com//v4/cpu/12142291
+Samsung Galaxy Note 4@@@https://browser.geekbench.com//v4/cpu/12142290
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12142286
+Gigabyte Technology Co., Ltd. X58A-UD7@@@https://browser.geekbench.com//v4/cpu/12142281
+IRBIS TZ897@@@https://browser.geekbench.com//v4/cpu/12142279
+MacBook Pro (13-inch Retina Mid 2014)@@@https://browser.geekbench.com//v4/cpu/12142278
+iMac (21.5-inch Late 2015)@@@https://browser.geekbench.com//v4/cpu/12142277
+MacBook Pro (15-inch Retina Late 2013)@@@https://browser.geekbench.com//v4/cpu/12142272
+Micro-Star International Co., Ltd. MS-7B48@@@https://browser.geekbench.com//v4/cpu/12142271
+iMac18,1@@@https://browser.geekbench.com//v4/cpu/12142270
+iMac18,3@@@https://browser.geekbench.com//v4/cpu/12142268
+LENOVO 20MDCTO1WW@@@https://browser.geekbench.com//v4/cpu/12142266
+Micro-Star International Co., Ltd. MS-7B48@@@https://browser.geekbench.com//v4/cpu/12142265
+Micro-Star International Co., Ltd. H310 Gaming Trident3 (MS-B920)@@@https://browser.geekbench.com//v4/cpu/12142262
+Dell Inc. Latitude E7440@@@https://browser.geekbench.com//v4/cpu/12142259
+iMac (27-inch Mid 2011)@@@https://browser.geekbench.com//v4/cpu/12142255
+Micro-Star International Co., Ltd. MS-7B48@@@https://browser.geekbench.com//v4/cpu/12142252
+Micro-Star International Co., Ltd. MS-7B48@@@https://browser.geekbench.com//v4/cpu/12142251
+Micro-Star International Co., Ltd. MS-7B48@@@https://browser.geekbench.com//v4/cpu/12142251
+Mac mini (Mid 2011)@@@https://browser.geekbench.com//v4/cpu/12142249
+iMacPro1,1@@@https://browser.geekbench.com//v4/cpu/12142245
+Gigabyte Technology Co., Ltd. X58A-UD7@@@https://browser.geekbench.com//v4/cpu/12142240
+Gigabyte Technology Co., Ltd. Z390 AORUS MASTER@@@https://browser.geekbench.com//v4/cpu/12142238
+iMac14,2@@@https://browser.geekbench.com//v4/cpu/12142236
+MSI MS-7817@@@https://browser.geekbench.com//v4/cpu/12142235
+Parallels14,1@@@https://browser.geekbench.com//v4/cpu/12142233
+Acer Aspire E5-573G@@@https://browser.geekbench.com//v4/cpu/12142232
+To be filled by O.E.M. To be filled by O.E.M.@@@https://browser.geekbench.com//v4/cpu/12142231
+MacBook Pro (15-inch Late 2016)@@@https://browser.geekbench.com//v4/cpu/12142230
+MacBookPro15,1@@@https://browser.geekbench.com//v4/cpu/12142227
+Red Hat KVM@@@https://browser.geekbench.com//v4/cpu/12142226
+HCL Infosystems Limited HCL Desktop@@@https://browser.geekbench.com//v4/cpu/12142223
+QEMU Standard PC (i440FX + PIIX, 1996)@@@https://browser.geekbench.com//v4/cpu/12142222
+Xiaomi Redmi 6@@@https://browser.geekbench.com//v4/cpu/12142220
+MacBookPro14,1@@@https://browser.geekbench.com//v4/cpu/12142212
+INTEL_ DH61SA__@@@https://browser.geekbench.com//v4/cpu/12142211
+iMac18,3@@@https://browser.geekbench.com//v4/cpu/12142206
+iMac (27-inch Retina Late 2015)@@@https://browser.geekbench.com//v4/cpu/12142204
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12142202
+MacPro5,1@@@https://browser.geekbench.com//v4/cpu/12142201
+samsung SM-A600FN@@@https://browser.geekbench.com//v4/cpu/12142200
+Micro-Star International Co., Ltd. MS-7B78@@@https://browser.geekbench.com//v4/cpu/12142199
+LENOVO 20MDCTO1WW@@@https://browser.geekbench.com//v4/cpu/12142194
+iMac (27-inch Retina Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12142190
+Godzilla The_Best_Box@@@https://browser.geekbench.com//v4/cpu/12142189
+ASUS All Series@@@https://browser.geekbench.com//v4/cpu/12142187
+Mac mini (Late 2018)@@@https://browser.geekbench.com//v4/cpu/12142184
+MacBook Pro (15-inch Retina Mid 2015)@@@https://browser.geekbench.com//v4/cpu/12142183
+ASUSTeK Computer Inc. K43SD@@@https://browser.geekbench.com//v4/cpu/12142176
+MacBookPro13,3@@@https://browser.geekbench.com//v4/cpu/12142175
+MacBook Pro (15-inch Retina Early 2013)@@@https://browser.geekbench.com//v4/cpu/12142172
+HP ProLiant MicroServer Gen8@@@https://browser.geekbench.com//v4/cpu/12142171
+iMac14,2@@@https://browser.geekbench.com//v4/cpu/12142169
+MacBook Pro (13-inch Late 2011)@@@https://browser.geekbench.com//v4/cpu/12142168
+MacPro5,1@@@https://browser.geekbench.com//v4/cpu/12142161
+MacBook Pro (13-inch Mid 2018)@@@https://browser.geekbench.com//v4/cpu/12142160
+Macmini8,1@@@https://browser.geekbench.com//v4/cpu/12142157
+Micro-Star International Co., Ltd. MS-7B79@@@https://browser.geekbench.com//v4/cpu/12142150
+iMac14,2@@@https://browser.geekbench.com//v4/cpu/12142144
+Micro-Star International Co., Ltd. MS-7B50@@@https://browser.geekbench.com//v4/cpu/12142138
+LENOVO 20MDCTO1WW@@@https://browser.geekbench.com//v4/cpu/12142137
+iMac14,2@@@https://browser.geekbench.com//v4/cpu/12142132
+Amlogic STV-2000@@@https://browser.geekbench.com//v4/cpu/12142124
+Alienware Aurora-R4@@@https://browser.geekbench.com//v4/cpu/12142122
+MacBook Pro (15-inch Retina Late 2013)@@@https://browser.geekbench.com//v4/cpu/12142120
+LENOVO 20307@@@https://browser.geekbench.com//v4/cpu/12142117
+Hewlett-Packard HP Z400 Workstation@@@https://browser.geekbench.com//v4/cpu/12142115
+QEMU Standard PC (Q35 + ICH9, 2009)@@@https://browser.geekbench.com//v4/cpu/12142113
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12142110
+Amazon EC2 t3.medium@@@https://browser.geekbench.com//v4/cpu/12142108
+HP ProLiant MicroServer Gen8@@@https://browser.geekbench.com//v4/cpu/12142104
+HP ProLiant MicroServer Gen8@@@https://browser.geekbench.com//v4/cpu/12142104
+Micro-Star International Co., Ltd. MS-7B78@@@https://browser.geekbench.com//v4/cpu/12142096
+Intel Corporation NUC8i7HNK@@@https://browser.geekbench.com//v4/cpu/12142094
+Godzilla The_Best_Box@@@https://browser.geekbench.com//v4/cpu/12142093
+Dell Inc. XPS 8900@@@https://browser.geekbench.com//v4/cpu/12142091
+Alienware Aurora-R4@@@https://browser.geekbench.com//v4/cpu/12142090
+Lenovo A1000@@@https://browser.geekbench.com//v4/cpu/12142089
+Dell Inc. Precision T7600@@@https://browser.geekbench.com//v4/cpu/12142087
+Mac mini (Late 2014)@@@https://browser.geekbench.com//v4/cpu/12142082
+Gigabyte Technology Co., Ltd. X58A-UD7@@@https://browser.geekbench.com//v4/cpu/12142078
+LENOVO 90GH000PCD@@@https://browser.geekbench.com//v4/cpu/12142077
+MacBook Pro (13-inch Late 2011)@@@https://browser.geekbench.com//v4/cpu/12142073
+Generic@@@https://browser.geekbench.com//v4/cpu/12142072
+Microsoft Corporation Surface Book 2@@@https://browser.geekbench.com//v4/cpu/12142068
+Default string Default string@@@https://browser.geekbench.com//v4/cpu/12142065
+MacBook Pro (13-inch Mid 2018)@@@https://browser.geekbench.com//v4/cpu/12142060
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12142057
+MacPro5,1@@@https://browser.geekbench.com//v4/cpu/12142056
+Gigabyte Technology Co., Ltd. X58A-UD7@@@https://browser.geekbench.com//v4/cpu/12142055
+Microsoft Corporation Surface Book 2@@@https://browser.geekbench.com//v4/cpu/12142053
+LENOVO 10VG001DGE@@@https://browser.geekbench.com//v4/cpu/12142052
+Samsung Galaxy J3 (2016)@@@https://browser.geekbench.com//v4/cpu/12142049
+iMac18,1@@@https://browser.geekbench.com//v4/cpu/12142048
+LENOVO 81EU@@@https://browser.geekbench.com//v4/cpu/12142043
+LENOVO 81CG@@@https://browser.geekbench.com//v4/cpu/12142040
+Samsung Galaxy S4@@@https://browser.geekbench.com//v4/cpu/12142035
+Gigabyte Technology Co., Ltd. B450 AORUS M@@@https://browser.geekbench.com//v4/cpu/12142029
+LENOVO 20MDCTO1WW@@@https://browser.geekbench.com//v4/cpu/12142028
+iMac (27-inch Retina Late 2015)@@@https://browser.geekbench.com//v4/cpu/12142021
+HP HP Pavilion x360 Convertible@@@https://browser.geekbench.com//v4/cpu/12142019
+MacBook Pro (13-inch Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12142016
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12142015
+LENOVO 42404AU@@@https://browser.geekbench.com//v4/cpu/12142014
+LENOVO 42404AU@@@https://browser.geekbench.com//v4/cpu/12142011
+LENOVO 42404AU@@@https://browser.geekbench.com//v4/cpu/12142010
+LENOVO 42404AU@@@https://browser.geekbench.com//v4/cpu/12142009
+LENOVO 42404AU@@@https://browser.geekbench.com//v4/cpu/12142008
+LENOVO 42404AU@@@https://browser.geekbench.com//v4/cpu/12142007
+LENOVO 42404AU@@@https://browser.geekbench.com//v4/cpu/12142006
+MacBook Air (Late 2018)@@@https://browser.geekbench.com//v4/cpu/12142001
+MacBook Pro (13-inch Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12141999
+LENOVO 42404AU@@@https://browser.geekbench.com//v4/cpu/12141998
+iMac14,2@@@https://browser.geekbench.com//v4/cpu/12141995
+ASUSTeK COMPUTER INC. GL553VD@@@https://browser.geekbench.com//v4/cpu/12141993
+MacPro6,1@@@https://browser.geekbench.com//v4/cpu/12141992
+Godzilla The_Best_Box@@@https://browser.geekbench.com//v4/cpu/12141989
+MacPro5,1@@@https://browser.geekbench.com//v4/cpu/12141985
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141981
+QEMU Standard PC (Q35 + ICH9, 2009)@@@https://browser.geekbench.com//v4/cpu/12141980
+LENOVO 42404AU@@@https://browser.geekbench.com//v4/cpu/12141976
+google HP Chromebook x360 11 G1 EE@@@https://browser.geekbench.com//v4/cpu/12141975
+MacBook Pro (15-inch Retina Late 2013)@@@https://browser.geekbench.com//v4/cpu/12141972
+MacBook Pro (15-inch Retina Late 2013)@@@https://browser.geekbench.com//v4/cpu/12141970
+Hewlett-Packard HP EliteBook 725 G2@@@https://browser.geekbench.com//v4/cpu/12141966
+Xiaomi Mi 4@@@https://browser.geekbench.com//v4/cpu/12141964
+Mac Pro (Mid 2010)@@@https://browser.geekbench.com//v4/cpu/12141963
+Xiaomi Redmi Y2@@@https://browser.geekbench.com//v4/cpu/12141962
+MacBook Pro (Late 2008)@@@https://browser.geekbench.com//v4/cpu/12141960
+Gigabyte Technology Co., Ltd. X399 AORUS Gaming 7@@@https://browser.geekbench.com//v4/cpu/12141947
+LG Nexus 5@@@https://browser.geekbench.com//v4/cpu/12141940
+QEMU Standard PC (Q35 + ICH9, 2009)@@@https://browser.geekbench.com//v4/cpu/12141938
+Micro-Star International Co., Ltd. GE75 Raider 8SG@@@https://browser.geekbench.com//v4/cpu/12141935
+Dell Inc. Inspiron 5737@@@https://browser.geekbench.com//v4/cpu/12141933
+MacBook Pro (13-inch Mid 2018)@@@https://browser.geekbench.com//v4/cpu/12141932
+MacBook Pro (13-inch Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12141930
+MacPro5,1@@@https://browser.geekbench.com//v4/cpu/12141929
+MacBook Pro (13-inch Mid 2018)@@@https://browser.geekbench.com//v4/cpu/12141927
+MacBook Pro (13-inch Mid 2018)@@@https://browser.geekbench.com//v4/cpu/12141921
+Mac Pro (Mid 2010)@@@https://browser.geekbench.com//v4/cpu/12141918
+CyberPowerPC TRACER III@@@https://browser.geekbench.com//v4/cpu/12141915
+Microsoft Corporation Surface Book 2@@@https://browser.geekbench.com//v4/cpu/12141914
+LENOVO 20MDCTO1WW@@@https://browser.geekbench.com//v4/cpu/12141912
+Gigabyte Technology Co., Ltd. Z390 AORUS MASTER@@@https://browser.geekbench.com//v4/cpu/12141911
+MacBook Pro (15-inch Mid 2018)@@@https://browser.geekbench.com//v4/cpu/12141907
+Gigabyte Technology Co., Ltd. X399 AORUS Gaming 7@@@https://browser.geekbench.com//v4/cpu/12141904
+Gigabyte Technology Co., Ltd. X399 AORUS Gaming 7@@@https://browser.geekbench.com//v4/cpu/12141903
+Gigabyte Technology Co., Ltd. X399 AORUS Gaming 7@@@https://browser.geekbench.com//v4/cpu/12141902
+Gigabyte Technology Co., Ltd. X399 AORUS Gaming 7@@@https://browser.geekbench.com//v4/cpu/12141899
+Intel Corporation Kabylake Client platform@@@https://browser.geekbench.com//v4/cpu/12141897
+Asus Zenfone Go@@@https://browser.geekbench.com//v4/cpu/12141896
+Intel Corporation Kabylake Client platform@@@https://browser.geekbench.com//v4/cpu/12141897
+Asus Zenfone Go@@@https://browser.geekbench.com//v4/cpu/12141896
+iMac (27-inch Retina Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12141895
+MacBook Pro (15-inch Early 2010)@@@https://browser.geekbench.com//v4/cpu/12141892
+MacPro5,1@@@https://browser.geekbench.com//v4/cpu/12141891
+MacBookPro11,2@@@https://browser.geekbench.com//v4/cpu/12141886
+Amlogic X96Max_V311@@@https://browser.geekbench.com//v4/cpu/12141881
+iMac13,2@@@https://browser.geekbench.com//v4/cpu/12141876
+iMac18,1@@@https://browser.geekbench.com//v4/cpu/12141871
+Samsung Galaxy S4@@@https://browser.geekbench.com//v4/cpu/12141866
+Microsoft Corporation Virtual Machine@@@https://browser.geekbench.com//v4/cpu/12141854
+ASUSTeK COMPUTER INC. ZenBook Pro 15 UX550GEX_UX550GEX@@@https://browser.geekbench.com//v4/cpu/12141850
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141849
+Acer Nitro AN515-52@@@https://browser.geekbench.com//v4/cpu/12141844
+Gigabyte Technology Co., Ltd. H110M-S2PH@@@https://browser.geekbench.com//v4/cpu/12141843
+Lenovo ZUK Z1@@@https://browser.geekbench.com//v4/cpu/12141832
+LGE LG-M150@@@https://browser.geekbench.com//v4/cpu/12141830
+Gigabyte Technology Co., Ltd. X58A-UD7@@@https://browser.geekbench.com//v4/cpu/12141828
+MacBook (Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12141824
+Sony D6563@@@https://browser.geekbench.com//v4/cpu/12141823
+Amazon EC2 r5a.4xlarge@@@https://browser.geekbench.com//v4/cpu/12141821
+Dell Inc. XPS 13 9360@@@https://browser.geekbench.com//v4/cpu/12141819
+MacBook Pro (17-inch Early 2011)@@@https://browser.geekbench.com//v4/cpu/12141816
+MStar Pineapple@@@https://browser.geekbench.com//v4/cpu/12141810
+MStar Pineapple@@@https://browser.geekbench.com//v4/cpu/12141810
+MacBook Pro (15-inch Mid 2012)@@@https://browser.geekbench.com//v4/cpu/12141806
+Mac Pro (Early 2009)@@@https://browser.geekbench.com//v4/cpu/12141803
+MacBook Pro (15-inch Mid 2018)@@@https://browser.geekbench.com//v4/cpu/12141802
+Default string Default string@@@https://browser.geekbench.com//v4/cpu/12141799
+MacBook Pro (15-inch Retina Early 2013)@@@https://browser.geekbench.com//v4/cpu/12141792
+Gigabyte Technology Co., Ltd. X58A-UD7@@@https://browser.geekbench.com//v4/cpu/12141791
+RTPROJECT PRINT@@@https://browser.geekbench.com//v4/cpu/12141775
+MacBook Pro (15-inch Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12141773
+PEGATRON CORPORATION D15D@@@https://browser.geekbench.com//v4/cpu/12141769
+MacBook Pro (15-inch Late 2016)@@@https://browser.geekbench.com//v4/cpu/12141766
+Default string Default string@@@https://browser.geekbench.com//v4/cpu/12141764
+LENOVO 20MDCTO1WW@@@https://browser.geekbench.com//v4/cpu/12141762
+Samsung Galaxy J5@@@https://browser.geekbench.com//v4/cpu/12141761
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141758
+QEMU Standard PC (i440FX + PIIX, 1996)@@@https://browser.geekbench.com//v4/cpu/12141755
+Mac Pro (Late 2013)@@@https://browser.geekbench.com//v4/cpu/12141754
+Supermicro AS -2013S-C0R@@@https://browser.geekbench.com//v4/cpu/12141752
+Xiaomi Redmi 6@@@https://browser.geekbench.com//v4/cpu/12141745
+iMac14,2@@@https://browser.geekbench.com//v4/cpu/12141744
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141740
+MSI MS-7885@@@https://browser.geekbench.com//v4/cpu/12141739
+MacBook Pro (13-inch Mid 2012)@@@https://browser.geekbench.com//v4/cpu/12141738
+LENOVO 20MDCTO1WW@@@https://browser.geekbench.com//v4/cpu/12141737
+Default string Default string@@@https://browser.geekbench.com//v4/cpu/12141733
+Default string Default string@@@https://browser.geekbench.com//v4/cpu/12141728
+Default string Default string@@@https://browser.geekbench.com//v4/cpu/12141727
+Acer Swift SF114-32@@@https://browser.geekbench.com//v4/cpu/12141726
+MSI MS-7817@@@https://browser.geekbench.com//v4/cpu/12141723
+Generic@@@https://browser.geekbench.com//v4/cpu/12141721
+Google AOSP on ARM Emulator@@@https://browser.geekbench.com//v4/cpu/12141713
+MacBook Air (11-inch Mid 2012)@@@https://browser.geekbench.com//v4/cpu/12141712
+samsung SM-A605G@@@https://browser.geekbench.com//v4/cpu/12141710
+MacBook Pro (13-inch Mid 2012)@@@https://browser.geekbench.com//v4/cpu/12141709
+iMac (21.5-inch Retina Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12141703
+iMac18,2@@@https://browser.geekbench.com//v4/cpu/12141701
+LENOVO 20MDCTO1WW@@@https://browser.geekbench.com//v4/cpu/12141699
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141698
+MSI MS-7A62@@@https://browser.geekbench.com//v4/cpu/12141695
+Micro-Star International Co., Ltd. MS-7B23@@@https://browser.geekbench.com//v4/cpu/12141693
+MacBook Pro (15-inch Late 2016)@@@https://browser.geekbench.com//v4/cpu/12141692
+Micro-Star International Co., Ltd. MS-7B23@@@https://browser.geekbench.com//v4/cpu/12141693
+MacBook Pro (15-inch Late 2016)@@@https://browser.geekbench.com//v4/cpu/12141692
+Samsung Galaxy J7@@@https://browser.geekbench.com//v4/cpu/12141690
+MSI MS-7817@@@https://browser.geekbench.com//v4/cpu/12141689
+ASUS All Series@@@https://browser.geekbench.com//v4/cpu/12141684
+Gigabyte Technology Co., Ltd. Z97X-SLI@@@https://browser.geekbench.com//v4/cpu/12141680
+MacBook Pro (15-inch Late 2016)@@@https://browser.geekbench.com//v4/cpu/12141678
+Gigabyte Technology Co., Ltd. X58A-UD7@@@https://browser.geekbench.com//v4/cpu/12141674
+Amlogic STV-2000@@@https://browser.geekbench.com//v4/cpu/12141668
+iMac18,2@@@https://browser.geekbench.com//v4/cpu/12141664
+Micro-Star International Co., Ltd. MS-7B89@@@https://browser.geekbench.com//v4/cpu/12141663
+MSI MS-7885@@@https://browser.geekbench.com//v4/cpu/12141660
+MacBookPro6,2@@@https://browser.geekbench.com//v4/cpu/12141658
+Samsung Galaxy J7@@@https://browser.geekbench.com//v4/cpu/12141656
+MacBook Pro (13-inch Late 2011)@@@https://browser.geekbench.com//v4/cpu/12141655
+Dell Inc. Inspiron 15-5578@@@https://browser.geekbench.com//v4/cpu/12141654
+samsung SM-J701F@@@https://browser.geekbench.com//v4/cpu/12141653
+MacBookPro15,3@@@https://browser.geekbench.com//v4/cpu/12141652
+LGE LG-Q710AL@@@https://browser.geekbench.com//v4/cpu/12141651
+Alienware Alienware 17 R5@@@https://browser.geekbench.com//v4/cpu/12141644
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141642
+Red Hat KVM@@@https://browser.geekbench.com//v4/cpu/12141639
+Gigabyte Technology Co., Ltd. X58A-UD7@@@https://browser.geekbench.com//v4/cpu/12141638
+ASUSTeK Computer INC. CM6330_CM6630_CM6730_CM6830_M11AA-8@@@https://browser.geekbench.com//v4/cpu/12141635
+ASUSTeK COMPUTER INC. VivoBook_ASUS Laptop X510UFO@@@https://browser.geekbench.com//v4/cpu/12141632
+iMac (21.5-inch Retina Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12141630
+MacBook Pro (13-inch Late 2011)@@@https://browser.geekbench.com//v4/cpu/12141624
+samsung SM-J600G@@@https://browser.geekbench.com//v4/cpu/12141617
+iMac (21.5-inch Retina Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12141611
+HUAWEI CRO-U00@@@https://browser.geekbench.com//v4/cpu/12141605
+Xiaomi Redmi 6@@@https://browser.geekbench.com//v4/cpu/12141603
+MacBookPro15,2@@@https://browser.geekbench.com//v4/cpu/12141602
+ASUSTeK COMPUTER INC. M32CD_A_F_K20CD_K31CD@@@https://browser.geekbench.com//v4/cpu/12141595
+LGE LG-Q710AL@@@https://browser.geekbench.com//v4/cpu/12141591
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141583
+Default string Default string@@@https://browser.geekbench.com//v4/cpu/12141582
+MacBook Pro (13-inch Retina Early 2015)@@@https://browser.geekbench.com//v4/cpu/12141581
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141580
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141578
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141577
+Alienware Alienware Aurora R6@@@https://browser.geekbench.com//v4/cpu/12141575
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141574
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141574
+MacBookPro15,2@@@https://browser.geekbench.com//v4/cpu/12141572
+MacBook Pro (13-inch Mid 2018)@@@https://browser.geekbench.com//v4/cpu/12141570
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141567
+iMac14,2@@@https://browser.geekbench.com//v4/cpu/12141562
+ASUSTeK COMPUTER INC. Q405UA@@@https://browser.geekbench.com//v4/cpu/12141558
+ASUS All Series@@@https://browser.geekbench.com//v4/cpu/12141552
+MSI MS-7A20@@@https://browser.geekbench.com//v4/cpu/12141548
+MacBook Pro (15-inch Retina Mid 2015)@@@https://browser.geekbench.com//v4/cpu/12141547
+MacBook Pro (13-inch Mid 2018)@@@https://browser.geekbench.com//v4/cpu/12141546
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141545
+MacBook Pro (13-inch Early 2010)@@@https://browser.geekbench.com//v4/cpu/12141542
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141539
+iMac18,3@@@https://browser.geekbench.com//v4/cpu/12141537
+MacBook Air (13-inch Early 2015)@@@https://browser.geekbench.com//v4/cpu/12141533
+netcup KVM Server@@@https://browser.geekbench.com//v4/cpu/12141532
+Apple Inc. MacBookPro11,1@@@https://browser.geekbench.com//v4/cpu/12141531
+LENOVO 90G0CTO1WW@@@https://browser.geekbench.com//v4/cpu/12141529
+iMac (27-inch Late 2012)@@@https://browser.geekbench.com//v4/cpu/12141527
+Motorola Nexus 6@@@https://browser.geekbench.com//v4/cpu/12141526
+LGE LG-Q710AL@@@https://browser.geekbench.com//v4/cpu/12141522
+QEMU Standard PC (Q35 + ICH9, 2009)@@@https://browser.geekbench.com//v4/cpu/12141521
+samsung SM-N916L@@@https://browser.geekbench.com//v4/cpu/12141517
+Red Hat KVM@@@https://browser.geekbench.com//v4/cpu/12141514
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141508
+HP HP Pavilion x360 Convertible 14m-cd0xxx@@@https://browser.geekbench.com//v4/cpu/12141505
+iMac18,3@@@https://browser.geekbench.com//v4/cpu/12141499
+Gigabyte Technology Co., Ltd. Z390 AORUS PRO WIFI@@@https://browser.geekbench.com//v4/cpu/12141498
+iMac (27-inch Retina Late 2015)@@@https://browser.geekbench.com//v4/cpu/12141497
+unknown 'RemoteMeeting Box'@@@https://browser.geekbench.com//v4/cpu/12141495
+MacBook (Early 2009)@@@https://browser.geekbench.com//v4/cpu/12141491
+MacBook Pro (13-inch Early 2010)@@@https://browser.geekbench.com//v4/cpu/12141489
+samsung SM-G960U@@@https://browser.geekbench.com//v4/cpu/12141488
+MacBook Pro (15-inch Retina Mid 2015)@@@https://browser.geekbench.com//v4/cpu/12141482
+iMac18,3@@@https://browser.geekbench.com//v4/cpu/12141479
+iMac18,3@@@https://browser.geekbench.com//v4/cpu/12141476
+Default string Default string@@@https://browser.geekbench.com//v4/cpu/12141475
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141473
+LGE LG-M430@@@https://browser.geekbench.com//v4/cpu/12141470
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141464
+MacBook Pro (13-inch Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12141462
+Gigabyte Technology Co., Ltd. X58A-UD7@@@https://browser.geekbench.com//v4/cpu/12141461
+LGE LG-H345@@@https://browser.geekbench.com//v4/cpu/12141455
+iMac18,3@@@https://browser.geekbench.com//v4/cpu/12141454
+MacBook (Early 2016)@@@https://browser.geekbench.com//v4/cpu/12141447
+MacBook Pro (13-inch Mid 2012)@@@https://browser.geekbench.com//v4/cpu/12141446
+Mac mini (Late 2018)@@@https://browser.geekbench.com//v4/cpu/12141442
+MSI MS-7917@@@https://browser.geekbench.com//v4/cpu/12141441
+To Be Filled By O.E.M. To Be Filled By O.E.M.@@@https://browser.geekbench.com//v4/cpu/12141437
+Red Hat KVM@@@https://browser.geekbench.com//v4/cpu/12141436
+MacBook Pro (13-inch Retina Early 2015)@@@https://browser.geekbench.com//v4/cpu/12141435
+Dell Inc. OptiPlex 9020@@@https://browser.geekbench.com//v4/cpu/12141428
+ASUSTeK COMPUTER INC. Q405UA@@@https://browser.geekbench.com//v4/cpu/12141426
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141425
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141424
+LENOVO 20MAS2PN01@@@https://browser.geekbench.com//v4/cpu/12141423
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141422
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141421
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141420
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141418
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141417
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141415
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141414
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141413
+Mac Pro (Mid 2010)@@@https://browser.geekbench.com//v4/cpu/12141411
+Micro-Star International Co., Ltd. MS-7B50@@@https://browser.geekbench.com//v4/cpu/12141409
+MacBook Pro (13-inch Mid 2018)@@@https://browser.geekbench.com//v4/cpu/12141408
+BDF K960N_MT6753_32_N@@@https://browser.geekbench.com//v4/cpu/12141407
+iMac15,1@@@https://browser.geekbench.com//v4/cpu/12141403
+Generic@@@https://browser.geekbench.com//v4/cpu/12141402
+Dell Inc. OptiPlex 9020@@@https://browser.geekbench.com//v4/cpu/12141400
+LENOVO 20MF000CUS@@@https://browser.geekbench.com//v4/cpu/12141399
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141395
+Samsung Galaxy J7 Prime@@@https://browser.geekbench.com//v4/cpu/12141394
+MacPro5,1@@@https://browser.geekbench.com//v4/cpu/12141393
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141390
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141389
+iMac (21.5-inch Mid 2011)@@@https://browser.geekbench.com//v4/cpu/12141388
+Samsung Galaxy J7@@@https://browser.geekbench.com//v4/cpu/12141386
+MacBook Pro (13-inch Mid 2009)@@@https://browser.geekbench.com//v4/cpu/12141385
+LGE VS835@@@https://browser.geekbench.com//v4/cpu/12141384
+MacBook Pro (15-inch Retina Mid 2015)@@@https://browser.geekbench.com//v4/cpu/12141383
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141380
+Alienware Alienware 15 R3@@@https://browser.geekbench.com//v4/cpu/12141379
+Samsung Galaxy S5@@@https://browser.geekbench.com//v4/cpu/12141377
+iMac (27-inch Retina Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12141375
+Hewlett-Packard @@@https://browser.geekbench.com//v4/cpu/12141374
+Macmini8,1@@@https://browser.geekbench.com//v4/cpu/12141371
+Intel(R) Client Systems NUC8i5BEK@@@https://browser.geekbench.com//v4/cpu/12141364
+Google grunt@@@https://browser.geekbench.com//v4/cpu/12141358
+LENOVO 4177CTO@@@https://browser.geekbench.com//v4/cpu/12141356
+Hewlett-Packard HP ProBook 650 G1@@@https://browser.geekbench.com//v4/cpu/12141348
+Mac Pro (Late 2013)@@@https://browser.geekbench.com//v4/cpu/12141347
+samsung SM-J337V@@@https://browser.geekbench.com//v4/cpu/12141340
+Acer B1-770@@@https://browser.geekbench.com//v4/cpu/12141338
+LENOVO INVALID@@@https://browser.geekbench.com//v4/cpu/12141334
+MacBook Pro (15-inch Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12141332
+MacBook Pro (13-inch Late 2016)@@@https://browser.geekbench.com//v4/cpu/12141330
+Sony Corporation VPCCB17FG@@@https://browser.geekbench.com//v4/cpu/12141322
+HP HP Laptop 15-da0xxx@@@https://browser.geekbench.com//v4/cpu/12141319
+QEMU Standard PC (i440FX + PIIX, 1996)@@@https://browser.geekbench.com//v4/cpu/12141318
+MacBookPro11,2@@@https://browser.geekbench.com//v4/cpu/12141317
+iMac (21.5-inch Mid 2011)@@@https://browser.geekbench.com//v4/cpu/12141315
+ASUSTeK COMPUTER INC. S300CA@@@https://browser.geekbench.com//v4/cpu/12141312
+iMac (27-inch Retina Late 2015)@@@https://browser.geekbench.com//v4/cpu/12141311
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141310
+Hewlett-Packard HP Pavilion 15 Notebook PC@@@https://browser.geekbench.com//v4/cpu/12141309
+Alienware Alienware Aurora R7@@@https://browser.geekbench.com//v4/cpu/12141305
+MSI MS-7917@@@https://browser.geekbench.com//v4/cpu/12141302
+MacBook Pro (13-inch Mid 2018)@@@https://browser.geekbench.com//v4/cpu/12141295
+MacBookPro11,2@@@https://browser.geekbench.com//v4/cpu/12141294
+Compal PBL20@@@https://browser.geekbench.com//v4/cpu/12141290
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141288
+Compal PBL20@@@https://browser.geekbench.com//v4/cpu/12141286
+Generic@@@https://browser.geekbench.com//v4/cpu/12141284
+Red Hat KVM@@@https://browser.geekbench.com//v4/cpu/12141282
+Samsung Galaxy J2 Prime@@@https://browser.geekbench.com//v4/cpu/12141280
+Macmini7,1@@@https://browser.geekbench.com//v4/cpu/12141278
+To Be Filled By O.E.M. To Be Filled By O.E.M.@@@https://browser.geekbench.com//v4/cpu/12141272
+To Be Filled By O.E.M. To Be Filled By O.E.M.@@@https://browser.geekbench.com//v4/cpu/12141270
+Dell Inc. Inspiron 13-5378@@@https://browser.geekbench.com//v4/cpu/12141254
+MSI MS-7917@@@https://browser.geekbench.com//v4/cpu/12141253
+MacBook Pro (15-inch Mid 2012)@@@https://browser.geekbench.com//v4/cpu/12141252
+Samsung Galaxy S4@@@https://browser.geekbench.com//v4/cpu/12141251
+Mac mini (Late 2018)@@@https://browser.geekbench.com//v4/cpu/12141248
+MacBook Pro (15-inch Retina Early 2013)@@@https://browser.geekbench.com//v4/cpu/12141242
+QEMU Standard PC (i440FX + PIIX, 1996)@@@https://browser.geekbench.com//v4/cpu/12141234
+Gigabyte Technology Co., Ltd. Z390 AORUS MASTER@@@https://browser.geekbench.com//v4/cpu/12141231
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141230
+iMac (21.5-inch Mid 2011)@@@https://browser.geekbench.com//v4/cpu/12141229
+MacBookAir8,1@@@https://browser.geekbench.com//v4/cpu/12141228
+Gigabyte Technology Co., Ltd. Z390 I AORUS PRO WIFI@@@https://browser.geekbench.com//v4/cpu/12141224
+iMac14,2@@@https://browser.geekbench.com//v4/cpu/12141221
+Unknown@@@https://browser.geekbench.com//v4/cpu/12141215
+iMac (27-inch Late 2012)@@@https://browser.geekbench.com//v4/cpu/12141214
+MacBook Pro (15-inch Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12141213
+Acer Aspire E5-574G@@@https://browser.geekbench.com//v4/cpu/12141212
+MacBook Pro (15-inch Retina Late 2013)@@@https://browser.geekbench.com//v4/cpu/12141210
+ASUSTeK COMPUTER INC. X555BP@@@https://browser.geekbench.com//v4/cpu/12141208
+QEMU Standard PC (i440FX + PIIX, 1996)@@@https://browser.geekbench.com//v4/cpu/12141201
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141199
+Mac Pro (Mid 2010)@@@https://browser.geekbench.com//v4/cpu/12141197
+iMac (21.5-inch Late 2015)@@@https://browser.geekbench.com//v4/cpu/12141196
+iMac (21.5-inch Retina Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12141195
+MacBook Pro (Retina)@@@https://browser.geekbench.com//v4/cpu/12141194
+iMac14,2@@@https://browser.geekbench.com//v4/cpu/12141190
+Dogtra AOSP on Rookie@@@https://browser.geekbench.com//v4/cpu/12141184
+MacBook Pro (15-inch Retina Late 2013)@@@https://browser.geekbench.com//v4/cpu/12141178
+iMac (21.5-inch Late 2012)@@@https://browser.geekbench.com//v4/cpu/12141171
+iMac (21.5-inch Late 2015)@@@https://browser.geekbench.com//v4/cpu/12141170
+iMac18,3@@@https://browser.geekbench.com//v4/cpu/12141169
+HP HP ENVY x360 Convertible@@@https://browser.geekbench.com//v4/cpu/12141166
+QEMU Standard PC (i440FX + PIIX, 1996)@@@https://browser.geekbench.com//v4/cpu/12141165
+MacBook Pro (15-inch Mid 2012)@@@https://browser.geekbench.com//v4/cpu/12141164
+iMac18,2@@@https://browser.geekbench.com//v4/cpu/12141163
+iMac17,1@@@https://browser.geekbench.com//v4/cpu/12141160
+MacPro5,1@@@https://browser.geekbench.com//v4/cpu/12141155
+MacBook Pro (13-inch Retina Late 2013)@@@https://browser.geekbench.com//v4/cpu/12141154
+MacBook Pro (15-inch Mid 2018)@@@https://browser.geekbench.com//v4/cpu/12141151
+Micro-Star International Co., Ltd. GS65 Stealth 8SE@@@https://browser.geekbench.com//v4/cpu/12141150
+iMac (21.5-inch Late 2015)@@@https://browser.geekbench.com//v4/cpu/12141149
+iMac (27-inch Late 2012)@@@https://browser.geekbench.com//v4/cpu/12141148
+MacBook Pro (Retina)@@@https://browser.geekbench.com//v4/cpu/12141147
+HP HP Laptop 17-by0xxx@@@https://browser.geekbench.com//v4/cpu/12141140
+MacBook Air (11-inch Mid 2011)@@@https://browser.geekbench.com//v4/cpu/12141137
+MacBook Pro (13-inch Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12141136
+Mac mini (Late 2018)@@@https://browser.geekbench.com//v4/cpu/12141134
+MacBook Pro (15-inch Late 2011)@@@https://browser.geekbench.com//v4/cpu/12141133
+Hewlett-Packard HP Pavilion 15 Notebook PC@@@https://browser.geekbench.com//v4/cpu/12141131
+Micro-Star International Co., Ltd. GS65 Stealth 8SE@@@https://browser.geekbench.com//v4/cpu/12141129
+MacBook Pro (13-inch Mid 2012)@@@https://browser.geekbench.com//v4/cpu/12141128
+iMac Pro (Late 2017)@@@https://browser.geekbench.com//v4/cpu/12141127
+Samsung Galaxy A3@@@https://browser.geekbench.com//v4/cpu/12141126
+MacBook Pro (15-inch Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12141125
+Micro-Star International Co., Ltd. MS-7A34@@@https://browser.geekbench.com//v4/cpu/12141121
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141120
+MacPro6,1@@@https://browser.geekbench.com//v4/cpu/12141116
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141114
+QEMU Standard PC (i440FX + PIIX, 1996)@@@https://browser.geekbench.com//v4/cpu/12141111
+iMac18,3@@@https://browser.geekbench.com//v4/cpu/12141105
+Micro-Star International Co., Ltd. GS65 Stealth 8SE@@@https://browser.geekbench.com//v4/cpu/12141104
+iMac18,1@@@https://browser.geekbench.com//v4/cpu/12141103
+MacBook Pro (Retina)@@@https://browser.geekbench.com//v4/cpu/12141101
+iMac18,2@@@https://browser.geekbench.com//v4/cpu/12141098
+MacPro6,1@@@https://browser.geekbench.com//v4/cpu/12141094
+MacBook Pro (15-inch Late 2016)@@@https://browser.geekbench.com//v4/cpu/12141083
+iMac14,2@@@https://browser.geekbench.com//v4/cpu/12141082
+LENOVO 80XS@@@https://browser.geekbench.com//v4/cpu/12141080
+LENOVO 80XS@@@https://browser.geekbench.com//v4/cpu/12141076
+QEMU Standard PC (i440FX + PIIX, 1996)@@@https://browser.geekbench.com//v4/cpu/12141075
+HP OMEN by HP Obelisk Desktop 875-0xxx@@@https://browser.geekbench.com//v4/cpu/12141074
+iMac (27-inch Retina Late 2015)@@@https://browser.geekbench.com//v4/cpu/12141073
+Generic@@@https://browser.geekbench.com//v4/cpu/12141070
+LENOVO 81CA@@@https://browser.geekbench.com//v4/cpu/12141069
+Micro-Star International Co., Ltd. GS65 Stealth 8SE@@@https://browser.geekbench.com//v4/cpu/12141068
+Micro-Star International Co., Ltd. GS65 Stealth 8SE@@@https://browser.geekbench.com//v4/cpu/12141068
+MSI MS-7917@@@https://browser.geekbench.com//v4/cpu/12141065
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141059
+HP OMEN by HP Laptop 15-dc0xxx@@@https://browser.geekbench.com//v4/cpu/12141047
+MacBook Pro (15-inch Mid 2018)@@@https://browser.geekbench.com//v4/cpu/12141046
+Gigabyte Technology Co., Ltd. B360M-DS3H@@@https://browser.geekbench.com//v4/cpu/12141045
+Micro-Star International Co., Ltd. GS65 Stealth 8SE@@@https://browser.geekbench.com//v4/cpu/12141043
+Micro-Star International Co., Ltd. MS-7B47@@@https://browser.geekbench.com//v4/cpu/12141040
+QEMU Standard PC (i440FX + PIIX, 1996)@@@https://browser.geekbench.com//v4/cpu/12141039
+QEMU Standard PC (i440FX + PIIX, 1996)@@@https://browser.geekbench.com//v4/cpu/12141039
+MacBook Pro (13-inch Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12141035
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12141033
+Micro-Star International Co., Ltd. GS65 Stealth 8SF@@@https://browser.geekbench.com//v4/cpu/12141032
+MacBook Pro (15-inch Retina Mid 2014)@@@https://browser.geekbench.com//v4/cpu/12141028
+iMac18,1@@@https://browser.geekbench.com//v4/cpu/12141019
+Generic@@@https://browser.geekbench.com//v4/cpu/12141017
+MacBook Pro (13-inch Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12141012
+Micro-Star International Co., Ltd. MS-7A38@@@https://browser.geekbench.com//v4/cpu/12141010
+Micro-Star International Co., Ltd. MS-7A38@@@https://browser.geekbench.com//v4/cpu/12141010
+iPad 2@@@https://browser.geekbench.com//v4/cpu/12141008
+QEMU Standard PC (i440FX + PIIX, 1996)@@@https://browser.geekbench.com//v4/cpu/12141002
+Generic@@@https://browser.geekbench.com//v4/cpu/12141000
+Samsung Galaxy Note 4@@@https://browser.geekbench.com//v4/cpu/12140999
+MacBook Pro (15-inch Retina Mid 2014)@@@https://browser.geekbench.com//v4/cpu/12140998
+Microsoft Corporation Surface Pro 4@@@https://browser.geekbench.com//v4/cpu/12140992
+Mac Pro (Late 2013)@@@https://browser.geekbench.com//v4/cpu/12140990
+Google grunt@@@https://browser.geekbench.com//v4/cpu/12140988
+iMac (27-inch Retina Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12140983
+Mac Pro (Late 2013)@@@https://browser.geekbench.com//v4/cpu/12140982
+iMac14,2@@@https://browser.geekbench.com//v4/cpu/12140980
+Mac Pro (Late 2013)@@@https://browser.geekbench.com//v4/cpu/12140976
+MacBook Pro (15-inch Retina Mid 2015)@@@https://browser.geekbench.com//v4/cpu/12140974
+MacBook Pro (15-inch Retina Mid 2014)@@@https://browser.geekbench.com//v4/cpu/12140972
+iMac (21.5-inch Mid 2011)@@@https://browser.geekbench.com//v4/cpu/12140961
+Gigabyte Technology Co., Ltd. Z390 DESIGNARE@@@https://browser.geekbench.com//v4/cpu/12140960
+HP OMEN by HP Laptop 15-dc0xxx@@@https://browser.geekbench.com//v4/cpu/12140951
+ASUS All Series@@@https://browser.geekbench.com//v4/cpu/12140950
+Micro-Star International Co., Ltd. GS65 Stealth 8SE@@@https://browser.geekbench.com//v4/cpu/12140944
+iMac (27-inch Mid 2011)@@@https://browser.geekbench.com//v4/cpu/12140940
+Generic@@@https://browser.geekbench.com//v4/cpu/12140939
+MacBook Pro (15-inch Retina Mid 2015)@@@https://browser.geekbench.com//v4/cpu/12140938
+Mac Pro (Late 2013)@@@https://browser.geekbench.com//v4/cpu/12140931
+QEMU Standard PC (i440FX + PIIX, 1996)@@@https://browser.geekbench.com//v4/cpu/12140927
+MacPro5,1@@@https://browser.geekbench.com//v4/cpu/12140926
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12140925
+Gigabyte Technology Co., Ltd. A320M-S2H V2@@@https://browser.geekbench.com//v4/cpu/12140919
+Supermicro X9DRL-3F/iF@@@https://browser.geekbench.com//v4/cpu/12140913
+MacBook Pro (15-inch Mid 2018)@@@https://browser.geekbench.com//v4/cpu/12140912
+MacBook Pro (Retina)@@@https://browser.geekbench.com//v4/cpu/12140911
+ASUS All Series@@@https://browser.geekbench.com//v4/cpu/12140910
+iPhone 5@@@https://browser.geekbench.com//v4/cpu/12140908
+Gigabyte Technology Co., Ltd. To be filled by O.E.M.@@@https://browser.geekbench.com//v4/cpu/12140904
+Mac Pro (Late 2013)@@@https://browser.geekbench.com//v4/cpu/12140903
+MacBookPro11,2@@@https://browser.geekbench.com//v4/cpu/12140899
+samsung SM-T530NU@@@https://browser.geekbench.com//v4/cpu/12140890
+Gigabyte Technology Co., Ltd. Z170N-Gaming 5@@@https://browser.geekbench.com//v4/cpu/12140889
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12140887
+Micro-Star International Co., Ltd MS-7B38@@@https://browser.geekbench.com//v4/cpu/12140882
+MacBook Pro (15-inch Late 2016)@@@https://browser.geekbench.com//v4/cpu/12140874
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12140873
+Gigabyte Technology Co., Ltd. To be filled by O.E.M.@@@https://browser.geekbench.com//v4/cpu/12140871
+HP 870-213w@@@https://browser.geekbench.com//v4/cpu/12140870
+QEMU Standard PC (i440FX + PIIX, 1996)@@@https://browser.geekbench.com//v4/cpu/12140869
+iMac18,1@@@https://browser.geekbench.com//v4/cpu/12140868
+Mac Pro (Mid 2012)@@@https://browser.geekbench.com//v4/cpu/12140865
+MacBook Air (13-inch Mid 2011)@@@https://browser.geekbench.com//v4/cpu/12140857
+Dell Inc. XPS 13 9360@@@https://browser.geekbench.com//v4/cpu/12140851
+Dell Inc. XPS 13 9360@@@https://browser.geekbench.com//v4/cpu/12140849
+samsung SM-J810M@@@https://browser.geekbench.com//v4/cpu/12140845
+Microsoft Corporation Surface Pro 3@@@https://browser.geekbench.com//v4/cpu/12140844
+iMac (27-inch Late 2013)@@@https://browser.geekbench.com//v4/cpu/12140843
+MacBook Pro (13-inch Early 2010)@@@https://browser.geekbench.com//v4/cpu/12140842
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12140841
+MacBook Pro (13-inch Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12140840
+MTDP MT-S1@@@https://browser.geekbench.com//v4/cpu/12140839
+LENOVO 2447GU3@@@https://browser.geekbench.com//v4/cpu/12140838
+LENOVO 20MDCTO1WW@@@https://browser.geekbench.com//v4/cpu/12140837
+Intel Corporation Kabylake Client platform@@@https://browser.geekbench.com//v4/cpu/12140836
+MacBook Pro (13-inch Retina Early 2015)@@@https://browser.geekbench.com//v4/cpu/12140835
+MacBook Pro (13-inch Retina Early 2015)@@@https://browser.geekbench.com//v4/cpu/12140835
+Micro-Star International Co., Ltd. GS65 Stealth 8SE@@@https://browser.geekbench.com//v4/cpu/12140833
+Micro-Star International Co., Ltd. GS65 Stealth 8SE@@@https://browser.geekbench.com//v4/cpu/12140832
+Micro-Star International Co., Ltd. GS65 Stealth 8SE@@@https://browser.geekbench.com//v4/cpu/12140830
+MacBook Pro (15-inch Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12140829
+Mac mini (Late 2018)@@@https://browser.geekbench.com//v4/cpu/12140823
+MacBook Pro (15-inch Late 2016)@@@https://browser.geekbench.com//v4/cpu/12140821
+MacBook Pro (15-inch Late 2016)@@@https://browser.geekbench.com//v4/cpu/12140815
+LENOVO 20MDCTO1WW@@@https://browser.geekbench.com//v4/cpu/12140813
+LENOVO 2447GU3@@@https://browser.geekbench.com//v4/cpu/12140810
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12140806
+iMac18,2@@@https://browser.geekbench.com//v4/cpu/12140803
+AMD FX-8320@@@https://browser.geekbench.com//v4/cpu/12140799
+Gigabyte Technology Co., Ltd. Z390 GAMING X@@@https://browser.geekbench.com//v4/cpu/12140794
+MacBook Pro (13-inch Mid 2018)@@@https://browser.geekbench.com//v4/cpu/12140793
+Mac Pro (Mid 2010)@@@https://browser.geekbench.com//v4/cpu/12140791
+iMac14,2@@@https://browser.geekbench.com//v4/cpu/12140790
+Mac Pro (Mid 2010)@@@https://browser.geekbench.com//v4/cpu/12140783
+MacBook Pro (13-inch Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12140782
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12140781
+LENOVO 20MDCTO1WW@@@https://browser.geekbench.com//v4/cpu/12140779
+Xiaomi Redmi 6A@@@https://browser.geekbench.com//v4/cpu/12140776
+LENOVO 81F4@@@https://browser.geekbench.com//v4/cpu/12140775
+Gigabyte Technology Co., Ltd. H110-D3A@@@https://browser.geekbench.com//v4/cpu/12140772
+Gigabyte Technology Co., Ltd. H81M-H@@@https://browser.geekbench.com//v4/cpu/12140771
+Mac mini (Late 2018)@@@https://browser.geekbench.com//v4/cpu/12140768
+Gigabyte Technology Co., Ltd. X299 AORUS Gaming 7 Pro@@@https://browser.geekbench.com//v4/cpu/12140767
+MacBook Pro (15-inch Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12140765
+MacBook Pro (13-inch Mid 2012)@@@https://browser.geekbench.com//v4/cpu/12140758
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12140755
+Gigabyte Technology Co., Ltd. Z390 GAMING X@@@https://browser.geekbench.com//v4/cpu/12140753
+ASUSTeK COMPUTER INC. G75VW@@@https://browser.geekbench.com//v4/cpu/12140752
+Gigabyte Technology Co., Ltd. H81M-H@@@https://browser.geekbench.com//v4/cpu/12140751
+Gigabyte Technology Co., Ltd. H81M-H@@@https://browser.geekbench.com//v4/cpu/12140750
+Dell Inc. Precision WorkStation T7500@@@https://browser.geekbench.com//v4/cpu/12140749
+Gigabyte Technology Co., Ltd. H81M-H@@@https://browser.geekbench.com//v4/cpu/12140748
+ASUSTeK Computer Inc. K43E@@@https://browser.geekbench.com//v4/cpu/12140747
+System manufacturer System Product Name@@@https://browser.geekbench.com//v4/cpu/12140743
+google Rockchip RK3288 Chromebook@@@https://browser.geekbench.com//v4/cpu/12140742
+Samsung Galaxy Note 3@@@https://browser.geekbench.com//v4/cpu/12140736
+Motorola Nexus 6@@@https://browser.geekbench.com//v4/cpu/12140732
+MacBook Pro (13-inch Late 2011)@@@https://browser.geekbench.com//v4/cpu/12140729
+Gigabyte Technology Co., Ltd. X299 AORUS Gaming 7 Pro@@@https://browser.geekbench.com//v4/cpu/12140727
+LENOVO 20MDCTO1WW@@@https://browser.geekbench.com//v4/cpu/12140725
+LENOVO 20DC0091KD@@@https://browser.geekbench.com//v4/cpu/12140724
+samsung SM-G611F@@@https://browser.geekbench.com//v4/cpu/12140720
+Macmini8,1@@@https://browser.geekbench.com//v4/cpu/12140719
+MacBook Pro (15-inch Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12140718
+Generic@@@https://browser.geekbench.com//v4/cpu/12140712
+Google grunt@@@https://browser.geekbench.com//v4/cpu/12140710
+ASUSTeK COMPUTER INC. X556UV@@@https://browser.geekbench.com//v4/cpu/12140707
+MacBookPro14,1@@@https://browser.geekbench.com//v4/cpu/12140705
+MacBook Pro (13-inch Retina Late 2013)@@@https://browser.geekbench.com//v4/cpu/12140704
+Gigabyte Technology Co., Ltd. To be filled by O.E.M.@@@https://browser.geekbench.com//v4/cpu/12140703
+MacBook Pro (13-inch Mid 2018)@@@https://browser.geekbench.com//v4/cpu/12140700
+MacBook Pro (13-inch Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12140698
+MacBook Pro (15-inch Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12140694
+LENOVO 20MDCTO1WW@@@https://browser.geekbench.com//v4/cpu/12140693
+Dell Inc. XPS 13 9360@@@https://browser.geekbench.com//v4/cpu/12140691
+ASUS All Series@@@https://browser.geekbench.com//v4/cpu/12140690
+MacBook Pro (15-inch Late 2011)@@@https://browser.geekbench.com//v4/cpu/12140689
+MacBook Pro (15-inch Mid 2017)@@@https://browser.geekbench.com//v4/cpu/12140683
+MacBookPro11,2@@@https://browser.geekbench.com//v4/cpu/12140682
+MSI MS-7968@@@https://browser.geekbench.com//v4/cpu/12140681
+Dell Inc. XPS 8930@@@https://browser.geekbench.com//v4/cpu/12140679
+iMac (27-inch Late 2013)@@@https://browser.geekbench.com//v4/cpu/12140678
+Dell Inc. Inspiron 3847@@@https://browser.geekbench.com//v4/cpu/12140668
+MacBook Pro (13-inch Mid 2018)@@@https://browser.geekbench.com//v4/cpu/12140666
+LENOVO 20MDCTO1WW@@@https://browser.geekbench.com//v4/cpu/12140665
+To be filled by O.E.M. To be filled by O.E.M.@@@https://browser.geekbench.com//v4/cpu/12140663
+Gigabyte Technology Co., Ltd. X58A-UD7@@@https://browser.geekbench.com//v4/cpu/12140662
+ASUS All Series@@@https://browser.geekbench.com//v4/cpu/12140658
+QEMU Standard PC (i440FX + PIIX, 1996)@@@https://browser.geekbench.com//v4/cpu/12140657
+Gigabyte Technology Co., Ltd. X470 AORUS ULTRA GAMING@@@https://browser.geekbench.com//v4/cpu/12140656
