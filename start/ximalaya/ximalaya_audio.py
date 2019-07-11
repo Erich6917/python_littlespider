@@ -248,7 +248,8 @@ def start_find_cate_ids():
     #     tel_url.append(base_url.format(tel_url=wenxue_dangdai, page=index))
 
     tel_url.append('https://www.ximalaya.com/diantai/xinwentai/')
-    tel_url.append('https://www.ximalaya.com/diantai/xinwentai/p2')
+    # tel_url.append('https://www.ximalaya.com/diantai/xinwentai/p2')
+    # tel_url.append(u'https://www.ximalaya.com/search/%E6%9D%A8%E6%BE%9C%E8%AE%BF%E8%B0%88%E5%BD%95')
 
     pattern = '"albumId":([^,]+),\s*"title":"([^"]+)"'
 
@@ -286,8 +287,54 @@ def start_parse_url_by_ids():
     return rt_msg
 
 
+def start_find_target_category():
+    url_list = []
+
+    # url_list.append('https://www.ximalaya.com/renwen/332155/')
+
+    # url_list.append('https://www.ximalaya.com/shishang/6715560/')
+
+    # url_list.append('https://www.ximalaya.com/renwen/235635/')
+
+    url_list.append('https://www.ximalaya.com/qinggan/18689216/')
+
+    # 遍历所有路径开始下载URL任务
+    for tel_url in url_list:
+
+        # step1 获取audio总条数
+        track_id = 18689216
+        track_name = u'青年圆桌派'
+
+        # req = requests.get(tel_url, headers=hd)
+        soup_msg = soup.request_headers(tel_url, headers=hd)
+
+        regex1 = u'专辑里的声音\(<!-- -->([0-9]+)<!-- -->\)'
+
+        org = re.findall(regex1, soup_msg)
+        if org:
+            print '{}@{}@{}'.format(track_id, track_name, int(org[0]))
+            # 调用保存方法
+            # _save_and_load_batch(tel_url, track_name, int(org[0]))
+        else:
+            print '{}@{}  PAGE 查询失败'.format(track_id, track_name)
+            continue
+
+        # step2 计算分页总数 生成包括分页的所有访问路径
+        page_num = get_page_num(int(org[0]))
+        telurl_list = []
+        telurl_list.append(tel_url)
+        base_url = '{tel_url}/p{page}'
+        if page_num > 1:
+            for page in range(2, page_num + 1):
+                telurl_list.append(base_url.format(tel_url=tel_url, page=page))
+
+        # step3 保存每个分页的音频详情
+        start_find_category(telurl_list, track_name)
+
+
 def start_find_all_category():
     url_list = start_parse_url_by_ids()
+
     if not url_list:
         errors('未找到解析文件，category！')
         return
@@ -325,6 +372,7 @@ def start_find_all_category():
 
         # step3 保存每个分页的音频详情
         start_find_category(telurl_list, track_name)
+
 
         # if True:
         #     return

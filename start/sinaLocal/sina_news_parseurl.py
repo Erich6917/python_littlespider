@@ -113,6 +113,13 @@ def save_url(url):
         gbl_file_urls.write(url + '\n')
 
 
+def save_urls(urls):
+    if urls:
+        global gbl_file_urls
+        gbl_file_urls.writelines('\n'.join(urls))
+        gbl_file_urls.flush()
+
+
 def parseurls_news_china():
     file_list = file_util.get_all_files_path_name('source/url')
     for file in file_list:
@@ -139,6 +146,8 @@ def parseurls_parse(url_list):
 
     # file_url_init()
 
+    rt_msg_list = []
+
     for url in url_list:
         counter_total += 1
         r_msg = parseurls_msg(url)
@@ -149,12 +158,20 @@ def parseurls_parse(url_list):
         if r_msg:
             counter_exit += 1
 
+            infos('解析成功URL：[ {} ] URL > {}'.format(counter_total, url))
+            rt_msg_list.append(r_msg)
+
             if counter_exit > 10000:
+                # 批量保存
+                # infos('批量保存中... {}'.format())
+                # save_urls(rt_msg_list)
+                # rt_msg_list = []
+
+                # 生成新文件
                 global gbl_path_output
                 init_output_file(gbl_path_output)
                 counter_exit = 0
 
-            infos('解析成功URL：[ {} ] URL > {}'.format(counter_total, url))
             save_url(r_msg)
 
             counter_error = 0  # 连续失败次数重置为0
@@ -184,6 +201,8 @@ def parseurls_msg(url):
         infos('暂未匹配该路径', url)
 
     return r_msg
+
+
 #
 # def parseurls_msg(url):
 #     p_tech_old_normal = r'http://news.sina.com.cn/s/.*'  # sina finace normal type

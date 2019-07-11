@@ -34,7 +34,9 @@ sys.setdefaultencoding('utf-8')
 
 
 # step2 读取文件 ，依次下载
-start_find_all_category()
+# start_find_all_category()
+
+start_find_target_category()
 
 # download_audio()
 # 批量下载URL END
