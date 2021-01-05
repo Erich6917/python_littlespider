@@ -373,11 +373,11 @@ def start_download_url():
 
 
 if __name__ == '__main__':
-    # start_download_address()
+    start_download_address()
 
-    # start_download_mp4()
+    start_download_mp4()
 
-    start_download_gogogo()
+    # start_download_gogogo()
 
 
     # start_download_url()

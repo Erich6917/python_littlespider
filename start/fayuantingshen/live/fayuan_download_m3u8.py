@@ -237,7 +237,7 @@ def start_download_url():
 if __name__ == '__main__':
     start_download()
 
-    start_download_url()
+    # start_download_url()
 
     # url = u'http://live5.bjcourt.gov.cn:8080/edge/defaults/201904/18/defaults/121349_646/KANP_0.vod.m3u\r\n'
     # print url.strip('\r').strip('\n')

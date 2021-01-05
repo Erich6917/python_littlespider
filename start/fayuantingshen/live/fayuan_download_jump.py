@@ -19,8 +19,19 @@ from bs4 import BeautifulSoup
 
 from selenium.webdriver.chrome.options import Options
 
+
 # import util.file_check_util as file_util
 # from util.logger_util import *
+
+def get_all_files_path_name_endswith(path_source, ends):
+    # file_util.get_all_files()
+    file_list = []
+    for root, dirs, files in os.walk(path_source):
+        for filename in files:
+            if filename.endswith(ends):
+                file_msg = filename, os.path.join(root, filename), root
+                file_list.append(file_msg)
+    return file_list
 
 
 def get_all_files_path_name(path_source='.'):
@@ -71,7 +82,7 @@ class mainAll(object):
 
     def scrapy_start(self):
         source_info = 'source/infos'
-        file_list = get_all_files_path_name(source_info)
+        file_list = get_all_files_path_name_endswith(source_info,'.txt')
 
         for file_name, file_path, file_root in file_list:
             with open(file_path) as file_href:
